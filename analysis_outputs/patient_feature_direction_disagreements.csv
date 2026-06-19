@@ -1,8 +1,0 @@
-feature,subject_id,before_HI,during_HI,difference,dominant_direction,patient_direction
-maximum,59285,0.56,0.57,0.009999999999999898,decrease,increase
-median,26398,0.02,0.03,0.009999999999999998,decrease,increase
-median,26502,0.02,0.03,0.009999999999999998,decrease,increase
-approximateEntropy,26502,0.48,0.49,0.010000000000000009,decrease,increase
-sampleEntropy,26502,0.275,0.28,0.0050000000000000044,decrease,increase
-fd_median,26502,5.029999999999999,5.39,0.3600000000000003,decrease,increase
-fd_median,27245,4.655,5.01,0.35499999999999954,decrease,increase

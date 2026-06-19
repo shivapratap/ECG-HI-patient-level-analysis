@@ -1,3 +1,0 @@
-subject_id,feature,condition,n_windows,mean,median,standard_deviation,q1,q3,minimum,maximum
-26502,median,before_HI,30,0.02433333333333334,0.02,0.005040069329937308,0.02,0.03,0.02,0.03
-26502,median,during_HI,58,0.03,0.03,0.0,0.03,0.03,0.03,0.03
