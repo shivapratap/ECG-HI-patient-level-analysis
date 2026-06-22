@@ -1,0 +1,3 @@
+subject_id,feature,condition,n_windows,mean,median,standard_deviation,q1,q3,minimum,maximum
+26502,skewness,before_HI,30,-2.494333333333333,-2.5149999999999997,0.18744531769675332,-2.605,-2.38,-2.94,-1.98
+26502,skewness,during_HI,58,-2.753275862068965,-2.8049999999999997,0.24849997656842332,-2.92,-2.645,-3.14,-2.12
