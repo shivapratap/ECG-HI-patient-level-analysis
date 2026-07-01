@@ -1,0 +1,8 @@
+item,value
+Top candidate features tested,6
+HRV features tested in HRV-valid subset,4
+Sensitivity analysis cohorts run,9
+Rows in sensitivity result table,47
+Leave-one-patient-out runs,120
+Top candidate features with 100% same median-difference sign across essential sensitivity analyses,4
+Top candidate features with 100% same dominant direction across essential sensitivity analyses,2

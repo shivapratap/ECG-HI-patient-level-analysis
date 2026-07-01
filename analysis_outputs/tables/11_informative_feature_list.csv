@@ -1,0 +1,53 @@
+feature,family,n_non_missing,n_missing,missing_percent,n_unique_non_missing,include_in_primary,reason
+HRV_MeanNN,HRV,1259,1,0.079,1202,1,Informative numeric feature
+HRV_SDNN,HRV,1259,1,0.079,1259,1,Informative numeric feature
+HRV_RMSSD,HRV,1259,1,0.079,1258,1,Informative numeric feature
+HRV_pNN50,HRV,1259,1,0.079,1118,1,Informative numeric feature
+R_amp_mean,Morphology / signal quality,1259,1,0.079,1259,1,Informative numeric feature
+R_amp_std,Morphology / signal quality,1259,1,0.079,1259,1,Informative numeric feature
+QRS_mean,Morphology / signal quality,1255,5,0.397,1232,1,Informative numeric feature
+QRS_std,Morphology / signal quality,1255,5,0.397,1250,1,Informative numeric feature
+signal_energy,Morphology / signal quality,1259,1,0.079,1259,1,Informative numeric feature
+maximum,Time-domain statistics,1260,0,0.0,143,1,Informative numeric feature
+minimum,Time-domain statistics,1260,0,0.0,159,1,Informative numeric feature
+median,Time-domain statistics,1260,0,0.0,16,1,Informative numeric feature
+standardDeviation,Time-domain statistics,1260,0,0.0,40,1,Informative numeric feature
+variance,Time-domain statistics,1260,0,0.0,20,1,Informative numeric feature
+kurtosis,Time-domain statistics,1260,0,0.0,843,1,Informative numeric feature
+skewness,Time-domain statistics,1260,0,0.0,536,1,Informative numeric feature
+numberOfZeroCrossing,Time-domain statistics,1260,0,0.0,865,1,Informative numeric feature
+positiveToNegativeSampleRatio,Time-domain statistics,1260,0,0.0,296,1,Informative numeric feature
+meanAbsoluteValue,Time-domain statistics,1260,0,0.0,29,1,Informative numeric feature
+approximateEntropy,Entropy / complexity,1260,0,0.0,106,1,Informative numeric feature
+sampleEntropy,Entropy / complexity,1260,0,0.0,96,1,Informative numeric feature
+permutationEntropy,Entropy / complexity,1260,0,0.0,83,1,Informative numeric feature
+singularValueDecompositionEntropy,Entropy / complexity,1260,0,0.0,77,1,Informative numeric feature
+fuzzyEntropy,Entropy / complexity,1260,0,0.0,76,1,Informative numeric feature
+distributionEntropy,Entropy / complexity,1260,0,0.0,39,1,Informative numeric feature
+renyiEntropy,Entropy / complexity,1260,0,0.0,419,1,Informative numeric feature
+lempelZivComplexity,Entropy / complexity,1260,0,0.0,118,1,Informative numeric feature
+hjorthMobility,Fractal / nonlinear,1260,0,0.0,67,1,Informative numeric feature
+hjorthComplexity,Fractal / nonlinear,1260,0,0.0,258,1,Informative numeric feature
+fisherInfo,Fractal / nonlinear,1260,0,0.0,37,1,Informative numeric feature
+petrosianFd,Fractal / nonlinear,1260,0,0.0,3,1,Informative numeric feature
+katzFd,Fractal / nonlinear,1260,0,0.0,190,1,Informative numeric feature
+higuchiFd,Fractal / nonlinear,1260,0,0.0,63,1,Informative numeric feature
+detrendedFluctuation,Fractal / nonlinear,1260,0,0.0,61,1,Informative numeric feature
+entropyProfiled_total_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,1180,1,Informative numeric feature
+entropyProfiled_average_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,13,1,Informative numeric feature
+entropyProfiled_maximum_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,392,1,Informative numeric feature
+entropyProfiled_median_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,5,1,Informative numeric feature
+entropyProfiled_standardDeviation_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,37,1,Informative numeric feature
+entropyProfiled_variance_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,16,1,Informative numeric feature
+entropyProfiled_kurtosis_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,1222,1,Informative numeric feature
+entropyProfiled_skewness_sampleEntropy,Entropy-profile aggregates,1260,0,0.0,720,1,Informative numeric feature
+fd_maximum,FD-summary aggregates,1260,0,0.0,1254,1,Informative numeric feature
+fd_minimum,FD-summary aggregates,1260,0,0.0,14,1,Informative numeric feature
+fd_mean,FD-summary aggregates,1260,0,0.0,823,1,Informative numeric feature
+fd_median,FD-summary aggregates,1260,0,0.0,482,1,Informative numeric feature
+fd_standardDeviation,FD-summary aggregates,1260,0,0.0,1005,1,Informative numeric feature
+fd_variance,FD-summary aggregates,1260,0,0.0,1251,1,Informative numeric feature
+fd_kurtosis,FD-summary aggregates,1260,0,0.0,1232,1,Informative numeric feature
+fd_skewness,FD-summary aggregates,1260,0,0.0,922,1,Informative numeric feature
+spectralEntropy,Spectral,1260,0,0.0,258,1,Informative numeric feature
+fd_bandPower,FD-summary aggregates,1260,0,0.0,9,1,Informative numeric feature

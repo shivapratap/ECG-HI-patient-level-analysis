@@ -1,0 +1,19 @@
+item,value
+input_file,20PatientsFinalData.xlsx
+n_rows,1260
+n_columns,62
+n_patients,20
+n_metadata_columns_expected,6
+n_metadata_columns_missing,0
+missing_metadata_columns,
+n_numeric_feature_columns,56
+n_non_numeric_non_metadata_columns,0
+non_numeric_non_metadata_columns,
+class_values,"0, 1"
+condition_values,"HI, PreHI"
+episode_label_values,"HI, HI1, HI2, HI3, HI4, HI5, HI6, PreHI"
+n_prehi_rows_class0,593
+n_hi_rows_class1,667
+total_missing_cells,17
+total_missing_feature_cells,17
+duplicate_full_rows,0

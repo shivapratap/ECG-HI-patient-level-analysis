@@ -1,0 +1,8 @@
+flag,description,n_flagged_segments,percent_segments
+flag_HRV_MeanNN_high,"HRV_MeanNN > 1500 ms; possible AF, heart block, or R-peak detection failure",33,2.62
+flag_HRV_RMSSD_high,HRV_RMSSD > 500 ms; possible arrhythmia or artifact,23,1.83
+flag_HRV_SDNN_high,HRV_SDNN > 500 ms; possible arrhythmia or artifact,19,1.51
+flag_QRS_std_zero,QRS_std == 0; possible fixed pacing or processing artifact,5,0.4
+flag_missing_key_quality_feature,"Missing at least one key HRV, morphology, or signal-quality feature",5,0.4
+flag_signal_energy_high,signal_energy > 50000; possible severe artifact or electrical noise,3,0.24
+flag_signal_energy_low,signal_energy < 10; possible lead disconnection or signal loss,1,0.08

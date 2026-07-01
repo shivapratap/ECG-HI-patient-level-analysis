@@ -1,3 +1,0 @@
-subject_id,feature,condition,n_windows,mean,median,standard_deviation,q1,q3,minimum,maximum
-27245,sampleEntropy,before_HI,30,0.20266666666666666,0.17,0.07651609401739061,0.15,0.21,0.14,0.41
-27245,sampleEntropy,during_HI,59,0.15254237288135597,0.14,0.01899121578601475,0.14,0.16,0.13,0.2

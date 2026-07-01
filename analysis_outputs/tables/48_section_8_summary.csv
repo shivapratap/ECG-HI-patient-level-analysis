@@ -1,0 +1,9 @@
+item,value
+HRV features analysed,4
+Total patients in full dataset,20
+Patients excluded from HRV-valid analysis,8
+Patients included in HRV-valid analysis,12
+HRV-valid patients with paired PreHI/HI data,12
+HRV features significant after HRV BH-FDR,0
+HRV features with bootstrap 95% CI excluding zero,0
+HRV features with direction consistency >= 0.80,0

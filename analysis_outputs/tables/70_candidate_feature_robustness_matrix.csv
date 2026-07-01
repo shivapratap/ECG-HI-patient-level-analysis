@@ -1,0 +1,7 @@
+feature,n_essential_sensitivity_analyses_available,n_same_dominant_direction_as_reference,percent_same_dominant_direction_as_reference,n_same_median_difference_sign_as_reference,percent_same_median_difference_sign_as_reference,median_direction_consistency_across_essential_analyses,min_direction_consistency_across_essential_analyses,n_essential_analyses_with_bootstrap_ci_excluding_zero,n_essential_analyses_with_raw_p_less_0_05
+QRS_mean,5,5,100.0,5,100.0,0.6,0.5789473684210527,0,4
+kurtosis,5,5,100.0,5,100.0,0.7368421052631579,0.6842105263157895,2,1
+fuzzyEntropy,5,4,80.0,4,80.0,0.6470588235294118,0.5,0,1
+entropyProfiled_maximum_sampleEntropy,5,4,80.0,5,100.0,0.631578947368421,0.5,0,2
+fd_mean,5,4,80.0,5,100.0,0.631578947368421,0.5,0,0
+fd_median,5,4,80.0,4,80.0,0.631578947368421,0.5,0,0

@@ -1,0 +1,21 @@
+Patient_id,included_in_HRV_valid_analysis,excluded_from_HRV_valid_analysis,exclusion_reason,n_PreHI_segments,n_HI_segments
+491,False,True,paced_or_icd,30,30
+638,False,True,paced_or_icd; continuous_AF,24,36
+906,False,True,major_HRV_outlier,30,28
+1049,False,True,paced_or_icd,30,31
+1855,True,False,,29,32
+8452,True,False,,30,59
+10013,True,False,,30,30
+26398,False,True,continuous_AF,30,30
+26502,True,False,,30,58
+27245,False,True,paced_or_icd,30,30
+30071,True,False,,30,49
+30851,False,True,paced_or_icd,33,20
+57091,True,False,,30,15
+59285,True,False,,30,32
+70447,True,False,,29,43
+80436,True,False,,30,27
+88503,True,False,,30,30
+90396,False,True,continuous_AF,29,28
+96305,True,False,,30,29
+96879,True,False,,29,30

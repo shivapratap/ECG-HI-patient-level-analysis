@@ -1,0 +1,12 @@
+family,include_in_primary,n_features
+Entropy / complexity,0,1
+Entropy / complexity,1,8
+Entropy-profile aggregates,0,1
+Entropy-profile aggregates,1,8
+FD-summary aggregates,1,9
+Fractal / nonlinear,1,7
+HRV,1,4
+Morphology / signal quality,1,5
+Spectral,1,1
+Time-domain statistics,0,2
+Time-domain statistics,1,10

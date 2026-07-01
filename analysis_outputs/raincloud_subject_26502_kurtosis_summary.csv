@@ -1,3 +1,0 @@
-subject_id,feature,condition,n_windows,mean,median,standard_deviation,q1,q3,minimum,maximum
-26502,kurtosis,before_HI,30,8.522333333333334,8.49,0.5806636116419364,8.162500000000001,8.865,7.4,9.96
-26502,kurtosis,during_HI,58,9.57655172413793,9.625,0.5677890383007751,9.335,9.9,7.34,10.6

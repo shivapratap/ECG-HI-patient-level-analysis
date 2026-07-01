@@ -1,0 +1,7 @@
+item,value
+Total segments,1260
+Segments with any fixed physiological/signal-quality flag,61
+Segments with any IQR outlier flag,424
+Segments with any fixed flag or IQR outlier flag,426
+Informative features assessed for IQR outliers,52
+Features with at least one IQR outlier,34

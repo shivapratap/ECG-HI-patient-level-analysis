@@ -1,0 +1,14 @@
+threshold,cluster_id,n_features_in_cluster,features_in_cluster
+0.85,rho_085_cluster_01,2,HRV_RMSSD; HRV_SDNN
+0.85,rho_085_cluster_02,3,approximateEntropy; fuzzyEntropy; sampleEntropy
+0.85,rho_085_cluster_03,2,entropyProfiled_kurtosis_sampleEntropy; entropyProfiled_skewness_sampleEntropy
+0.85,rho_085_cluster_04,2,entropyProfiled_standardDeviation_sampleEntropy; entropyProfiled_variance_sampleEntropy
+0.85,rho_085_cluster_05,2,fd_kurtosis; fd_skewness
+0.85,rho_085_cluster_06,6,fd_standardDeviation; fd_variance; meanAbsoluteValue; renyiEntropy; standardDeviation; variance
+0.85,rho_085_cluster_07,3,fisherInfo; hjorthMobility; singularValueDecompositionEntropy
+0.9,rho_09_cluster_01,2,HRV_RMSSD; HRV_SDNN
+0.9,rho_09_cluster_02,3,approximateEntropy; fuzzyEntropy; sampleEntropy
+0.9,rho_09_cluster_03,2,entropyProfiled_kurtosis_sampleEntropy; entropyProfiled_skewness_sampleEntropy
+0.9,rho_09_cluster_04,2,fd_kurtosis; fd_skewness
+0.9,rho_09_cluster_05,4,fd_standardDeviation; fd_variance; standardDeviation; variance
+0.9,rho_09_cluster_06,3,fisherInfo; hjorthMobility; singularValueDecompositionEntropy

@@ -1,0 +1,10 @@
+clinical_flag,n_segments_flagged,percent_segments_flagged
+is_paced_or_icd,294,23.33
+antiarrhythmic_exposure,293,23.25
+clean_sinus_candidate,285,22.62
+has_BBB,232,18.41
+intermittent_or_new_AF,209,16.59
+mechanical_support,180,14.29
+atypical_HI,179,14.21
+continuous_AF,177,14.05
+major_HRV_outlier,58,4.6

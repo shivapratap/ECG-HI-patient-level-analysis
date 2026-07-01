@@ -1,0 +1,10 @@
+clinical_flag,n_patients_flagged,percent_patients_flagged
+antiarrhythmic_exposure,5,25.0
+is_paced_or_icd,5,25.0
+clean_sinus_candidate,4,20.0
+has_BBB,4,20.0
+atypical_HI,3,15.0
+continuous_AF,3,15.0
+intermittent_or_new_AF,3,15.0
+mechanical_support,3,15.0
+major_HRV_outlier,1,5.0

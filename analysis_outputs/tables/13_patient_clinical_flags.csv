@@ -1,0 +1,21 @@
+Patient_id,is_paced_or_icd,continuous_AF,intermittent_or_new_AF,atypical_HI,major_HRV_outlier,has_BBB,antiarrhythmic_exposure,mechanical_support,clean_sinus_candidate,rhythm_group,shock_group,clinical_note_summary
+491,1,0,0,0,0,0,0,0,0,paced_or_icd,cardiogenic_or_mixed_flagged,Permanent pacemaker; AF/flutter; severe valve disease/CHF
+638,1,1,0,0,0,1,1,0,0,paced_or_icd,cardiogenic_or_mixed_flagged,"Permanent pacemaker, continuous AF, digoxin toxicity, amiodarone"
+906,0,0,0,0,1,0,0,0,0,no_major_rhythm_flag,cardiogenic_or_mixed_flagged,Major HRV outlier; acute STEMI/cardiogenic shock
+1049,1,0,1,0,0,0,1,0,0,paced_or_icd,cardiogenic_or_mixed_flagged,Temporary transvenous pacemaker; chronic AF/flutter; sotalol
+1855,0,0,0,0,0,0,0,1,0,no_major_rhythm_flag,cardiogenic_or_mixed_flagged,Sinus rhythm with ECMO/IABP support; scattered HRV outliers
+8452,0,0,0,0,0,0,0,0,1,no_major_rhythm_flag,clean_sinus_candidate,Sinus rhythm; ischemic cardiomyopathy/ESRD; clean sinus candidate
+10013,0,0,1,0,0,0,0,0,0,intermittent_or_new_AF,cardiogenic_or_mixed_flagged,Rapid AF; preserved EF; sepsis/pneumonia mixed mechanism
+26398,0,1,0,0,0,0,1,0,0,continuous_AF,cardiogenic_or_mixed_flagged,Continuous AF with RVR; amiodarone exposure
+26502,0,0,1,0,0,0,0,0,0,intermittent_or_new_AF,cardiogenic_or_mixed_flagged,New-onset AF; severe ischemic cardiomyopathy; VF/VT history
+27245,1,0,0,0,0,1,0,0,0,paced_or_icd,cardiogenic_or_mixed_flagged,ICD/LBBB; low early PreHI signal energy
+30071,0,0,0,0,0,0,0,0,1,no_major_rhythm_flag,clean_sinus_candidate,Sinus rhythm post-CABG; clean sinus candidate
+30851,1,0,0,0,0,1,1,0,0,paced_or_icd,cardiogenic_or_mixed_flagged,Temporary pacemaker/new LBBB; amiodarone; hypokalemia
+57091,0,0,0,1,0,0,0,0,0,no_major_rhythm_flag,atypical_or_non_primary_cardiogenic,Atypical HI: respiratory failure/IPF; normal cardiac markers
+59285,0,0,0,1,0,0,0,0,0,no_major_rhythm_flag,atypical_or_non_primary_cardiogenic,Atypical HI: cirrhosis/hepatorenal syndrome
+70447,0,0,0,1,0,0,0,0,0,no_major_rhythm_flag,atypical_or_non_primary_cardiogenic,Atypical HI: aspiration pneumonia/acute cor pulmonale; signal loss segment
+80436,0,0,0,0,0,0,0,0,1,no_major_rhythm_flag,clean_sinus_candidate,Sinus rhythm; ischemic MR/LVH; clean sinus candidate
+88503,0,0,0,0,0,0,0,1,1,no_major_rhythm_flag,clean_sinus_candidate,Sinus rhythm; post-infarct VSD; Tandem/ECMO; clean sinus candidate
+90396,0,1,0,0,0,0,0,0,0,continuous_AF,cardiogenic_or_mixed_flagged,Continuous AF throughout segments; systematic HRV outlier
+96305,0,0,0,0,0,0,1,0,0,no_major_rhythm_flag,cardiogenic_or_mixed_flagged,Post-VF arrest; lidocaine; therapeutic hypothermia
+96879,0,0,0,0,0,1,0,1,0,no_major_rhythm_flag,cardiogenic_or_mixed_flagged,RBBB; ECMO/Tandem Heart; severe biventricular failure
