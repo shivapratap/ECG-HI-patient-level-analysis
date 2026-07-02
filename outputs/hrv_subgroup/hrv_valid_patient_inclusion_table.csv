@@ -1,0 +1,21 @@
+Patient_id,exclude_from_HRV_valid_subgroup,hrv_invalid_flag,paced_or_icd,continuous_AF,major_HRV_outlier,intermittent_or_new_AF,any_af,BBB,mechanical_support,clean_sinus_candidate,confound_count,notes,hrv_invalid_computed,hrv_valid_subgroup,hrv_exclusion_reason
+10013,0,0,0,0,0,1,1,0,0,0,1,Rapid AF/intermittent AF; preserved EF with sepsis/pneumonia context.,0,1,
+1049,1,1,1,0,0,1,1,0,0,0,3,Temporary transvenous pacemaker after PEA arrest; chronic AF/flutter; sotalol exposure.,1,0,curated_exclude_from_HRV_valid_subgroup; paced_or_icd; hrv_invalid_flag
+1855,0,0,0,0,0,0,0,0,1,0,1,Sinus rhythm but ECMO/mechanical support exposure; scattered HRV outlier segments noted.,0,1,
+26398,1,1,0,1,0,0,1,0,0,0,2,Continuous AF with RVR; amiodarone exposure.,1,0,curated_exclude_from_HRV_valid_subgroup; continuous_AF; hrv_invalid_flag
+26502,0,0,0,0,0,1,1,0,0,0,1,New-onset AF during admission; severe ischemic cardiomyopathy.,0,1,
+27245,1,1,1,0,0,0,0,1,0,0,2,ICD implanted; LBBB on admission; low early PreHI signal-energy concern.,1,0,curated_exclude_from_HRV_valid_subgroup; paced_or_icd; hrv_invalid_flag
+30071,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; post-CABG cardiogenic shock context.,0,1,
+30851,1,1,1,0,0,0,0,1,0,0,3,Temporary pacemaker after asystole; new LBBB; amiodarone exposure; QRS_std zero segments.,1,0,curated_exclude_from_HRV_valid_subgroup; paced_or_icd; hrv_invalid_flag
+491,1,1,1,0,0,0,0,0,0,0,1,Permanent pacemaker/ICD-related pacing concern; HRV not intrinsic.,1,0,curated_exclude_from_HRV_valid_subgroup; paced_or_icd; hrv_invalid_flag
+57091,0,0,0,0,0,0,0,0,0,0,1,Atypical HI etiology; respiratory failure/IPF with non-cardiogenic mechanism.,0,1,
+59285,0,0,0,0,0,0,0,0,0,0,1,Atypical HI etiology; hepatic failure/hepatorenal physiology.,0,1,
+638,1,1,1,1,0,0,1,1,0,0,4,Permanent pacemaker with continuous AF; paced LBBB morphology; antiarrhythmic/digoxin exposure.,1,0,curated_exclude_from_HRV_valid_subgroup; paced_or_icd; continuous_AF; hrv_invalid_flag
+70447,0,0,0,0,0,0,0,0,0,0,1,Atypical HI etiology; aspiration pneumonia/acute cor pulmonale; one near-zero signal-energy segment.,0,1,
+80436,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; recent NSTEMI with severe ischemic MR/LVH.,0,1,
+8452,0,0,0,0,0,0,0,0,0,1,0,Clean sinus candidate; ischemic cardiomyopathy with ESRD/electrolyte lability.,0,1,
+88503,0,0,0,0,0,0,0,0,1,1,1,Clean sinus candidate; post-infarct VSD repair with Tandem/ECMO support during acute phase.,0,1,
+90396,1,1,0,1,0,0,1,0,0,0,1,Continuous AF throughout segments; systematic HRV outlier pattern explained by AF.,1,0,curated_exclude_from_HRV_valid_subgroup; continuous_AF; hrv_invalid_flag
+906,1,1,0,0,1,0,0,0,0,0,1,Major HRV outlier; HRV_MeanNN extreme values likely artifact or severe arrhythmia.,1,0,curated_exclude_from_HRV_valid_subgroup; major_HRV_outlier; hrv_invalid_flag
+96305,0,0,0,0,0,0,0,0,0,0,1,Post-VF arrest; lidocaine drip and therapeutic hypothermia exposure.,0,1,
+96879,0,0,0,0,0,0,0,1,1,0,2,RBBB; ECMO/Tandem support; severe biventricular failure.,0,1,

@@ -1,0 +1,53 @@
+feature,feature_family,n_paired_patients,n_increase,n_decrease,n_no_change,dominant_direction,direction_consistency,median_PreHI,median_HI,median_delta_HI_minus_PreHI,median_percent_change,n_percent_change_unstable
+fd_bandPower,fractal-dimension summary features,20,0,0,20,no_change,1.0,0.0,0.0,0.0,,20
+HRV_MeanNN,HRV,20,15,5,0,increase,0.75,626.025792225,642.4071739,20.759493749999933,3.9719993901506663,0
+kurtosis,time-domain statistics,20,15,5,0,increase,0.75,5.98,5.885,0.9924999999999997,24.6866023885912,0
+signal_energy,ECG morphology and signal energy,20,13,7,0,increase,0.65,12857.312427500001,13373.7877625,174.67302500000005,1.2916864415971647,0
+HRV_pNN50,HRV,20,7,13,0,decrease,0.65,44.7382946925,30.966068794999998,-11.345795360000002,-21.29314522835047,0
+fuzzyEntropy,entropy and complexity,20,5,13,2,decrease,0.65,0.22999999999999998,0.2375,-0.01999999999999999,-10.818713450292393,0
+sampleEntropy,entropy and complexity,20,6,13,1,decrease,0.65,0.2675,0.28500000000000003,-0.03499999999999999,-16.27536231884058,0
+entropyProfiled_maximum_sampleEntropy,entropy-profile aggregate features,20,5,13,2,decrease,0.65,2.3825000000000003,2.3425000000000002,-0.25500000000000017,-14.036859378944719,0
+fd_mean,fractal-dimension summary features,20,7,13,0,decrease,0.65,7.952500000000001,7.12,-0.36500000000000044,-4.860165385789567,0
+fd_median,fractal-dimension summary features,20,7,13,0,decrease,0.65,2.9525,1.86,-0.16249999999999998,-5.47289481032351,0
+QRS_mean,ECG morphology and signal energy,20,12,8,0,increase,0.6,0.13447805224999998,0.1513134615,0.01035768875000001,5.902619880128842,0
+R_amp_mean,ECG morphology and signal energy,20,8,12,0,decrease,0.6,-0.39074372575,-0.43037069399999994,-0.18839682025000015,-18.03383831429861,0
+hjorthComplexity,entropy and complexity,20,7,12,1,decrease,0.6,1.83,1.845,-0.04749999999999999,-2.701060001944957,0
+permutationEntropy,entropy and complexity,20,12,7,1,increase,0.6,2.3725,2.3425,0.030000000000000027,1.3797692990239587,0
+entropyProfiled_skewness_sampleEntropy,entropy-profile aggregate features,20,12,8,0,increase,0.6,8.7725,8.86,0.2599999999999998,2.987861066808435,0
+katzFd,fractal and nonlinear dynamics,20,7,12,1,decrease,0.6,3.0275,2.9875,-0.05249999999999977,-1.6761991916418748,0
+petrosianFd,fractal and nonlinear dynamics,20,4,4,12,no_change,0.6,1.02,1.02,0.0,0.0,0
+fd_standardDeviation,fractal-dimension summary features,20,8,12,0,decrease,0.6,20.135,20.137500000000003,-0.4800000000000004,-2.0578285025895173,0
+fd_variance,fractal-dimension summary features,20,8,12,0,decrease,0.6,406.5925,405.44000000000005,-18.897500000000008,-4.053052354935057,0
+maximum,time-domain statistics,20,7,12,1,decrease,0.6,0.5800000000000001,0.4825,-0.012499999999999983,-2.0865642182433337,0
+numberOfZeroCrossing,time-domain statistics,20,8,12,0,decrease,0.6,1357.75,1203.0,-53.75,-5.966183289795319,0
+R_amp_std,ECG morphology and signal energy,20,9,11,0,decrease,0.55,0.8313570487499999,0.704156738,-0.052887883000000024,-6.841129505044636,0
+HRV_SDNN,HRV,20,9,11,0,decrease,0.55,48.6213296075,48.490025630000005,-1.6762685174999987,-4.035840949799637,0
+approximateEntropy,entropy and complexity,20,7,11,2,decrease,0.55,0.46499999999999997,0.41000000000000003,-0.03249999999999997,-6.874115983026867,0
+renyiEntropy,entropy and complexity,20,11,8,1,increase,0.55,-8.895,-8.92,0.054999999999999716,0.5846735652246157,0
+entropyProfiled_kurtosis_sampleEntropy,entropy-profile aggregate features,20,11,9,0,increase,0.55,97.2525,99.465,3.5999999999999943,3.509987495778184,0
+entropyProfiled_standardDeviation_sampleEntropy,entropy-profile aggregate features,20,3,11,6,decrease,0.55,0.1325,0.14,-0.015,-11.437908496732028,0
+entropyProfiled_total_sampleEntropy,entropy-profile aggregate features,20,9,11,0,decrease,0.55,66.0275,62.655,-3.2475000000000023,-4.286467584369452,0
+fd_minimum,fractal-dimension summary features,20,2,7,11,no_change,0.55,0.01,0.01,0.0,0.0,3
+meanAbsoluteValue,time-domain statistics,20,8,11,1,decrease,0.55,0.12,0.11,-0.009999999999999988,-6.9047619047619015,0
+skewness,time-domain statistics,20,11,9,0,increase,0.55,-0.305,-0.21000000000000002,0.042499999999999996,3.6062779765137827,0
+QRS_std,ECG morphology and signal energy,20,10,10,0,tie_or_mixed,0.5,0.03713810025,0.035326751749999996,-0.0008651380000000031,-3.091835938943172,0
+HRV_RMSSD,HRV,20,10,10,0,tie_or_mixed,0.5,77.07343222,73.3548031,0.445869794999993,0.8143534551644752,0
+singularValueDecompositionEntropy,entropy and complexity,20,10,10,0,tie_or_mixed,0.5,1.13,1.1050000000000002,0.0,-0.07426516572858038,0
+spectralEntropy,entropy and complexity,20,10,10,0,tie_or_mixed,0.5,4.9399999999999995,4.8425,-0.050000000000000266,-0.9532545383405854,0
+entropyProfiled_average_sampleEntropy,entropy-profile aggregate features,20,5,5,10,no_change,0.5,0.05,0.05,0.0,0.0,0
+entropyProfiled_variance_sampleEntropy,entropy-profile aggregate features,20,2,8,10,no_change,0.5,0.02,0.02,0.0,0.0,0
+higuchiFd,fractal and nonlinear dynamics,20,8,10,2,decrease,0.5,1.4249999999999998,1.38,-0.0025000000000000577,-0.20746887966805458,0
+hjorthMobility,fractal and nonlinear dynamics,20,10,9,1,increase,0.5,0.485,0.45499999999999996,0.0050000000000000044,0.9090909090909098,0
+fd_kurtosis,fractal-dimension summary features,20,10,10,0,tie_or_mixed,0.5,163.885,140.755,1.0350000000000001,-2.5340139675328666,0
+fd_maximum,fractal-dimension summary features,20,10,10,0,tie_or_mixed,0.5,458.5475,450.5825,-5.707499999999982,-2.251785406046744,0
+fd_skewness,fractal-dimension summary features,20,10,10,0,tie_or_mixed,0.5,9.6225,8.709999999999999,0.022500000000000187,-0.7523293371002038,0
+minimum,time-domain statistics,20,10,9,1,increase,0.5,-0.55,-0.6,0.0050000000000000044,0.4098360655737709,0
+positiveToNegativeSampleRatio,time-domain statistics,20,10,10,0,tie_or_mixed,0.5,1.1075000000000002,1.0474999999999999,-0.0050000000000000044,-0.2196382428940571,0
+distributionEntropy,entropy and complexity,20,7,9,4,decrease,0.45,0.83,0.83,0.0,0.0,0
+lempelZivComplexity,entropy and complexity,20,5,6,9,no_change,0.45,2.0,2.0,0.0,0.0,0
+entropyProfiled_median_sampleEntropy,entropy-profile aggregate features,20,7,4,9,no_change,0.45,0.02,0.02,0.0,0.0,2
+detrendedFluctuation,fractal and nonlinear dynamics,20,7,9,4,decrease,0.45,0.515,0.5275000000000001,0.0,0.0,0
+fisherInfo,fractal and nonlinear dynamics,20,9,9,2,tie_or_mixed,0.45,0.5,0.4875,0.0,0.0,0
+variance,time-domain statistics,20,5,7,8,no_change,0.4,0.03,0.03,0.0,0.0,2
+median,time-domain statistics,20,6,7,7,tie_or_mixed,0.35,0.01,0.0,0.0,0.0,2
+standardDeviation,time-domain statistics,20,7,7,6,tie_or_mixed,0.35,0.1775,0.18,0.0,0.0,0

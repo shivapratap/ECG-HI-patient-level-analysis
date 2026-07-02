@@ -1,0 +1,10 @@
+metric,value
+n_segment_rows_before_merge,1260
+n_segment_rows_after_merge,1260
+n_unique_segment_patients,20
+n_unique_clinical_flag_patients,20
+n_unique_merged_patients,20
+n_rows_matched_both,1260
+n_rows_left_only_no_clinical_match,0
+n_clinical_flag_duplicate_patient_rows,0
+n_clinical_summary_duplicate_patient_rows,0

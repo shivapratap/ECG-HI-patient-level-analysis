@@ -1,8 +1,0 @@
-item,value
-Informative features included in correlation analysis,52
-High-correlation pairs with |rho| >= 0.85,20
-High-correlation pairs with |rho| >= 0.90,13
-Redundancy clusters at |rho| >= 0.85,7
-Redundancy clusters at |rho| >= 0.90,6
-Features retained after rho 0.90 redundancy filtering,42
-Features removed by rho 0.90 redundancy filtering,10

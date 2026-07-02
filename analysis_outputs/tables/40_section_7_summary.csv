@@ -1,9 +1,0 @@
-item,value
-Informative features analysed,52
-Patients available in dataset,20
-Features with complete 20-patient paired data,52
-Features significant after global BH-FDR,0
-Features significant after family-level BH-FDR,0
-Features with bootstrap 95% CI excluding zero,2
-Features with direction consistency >= 0.80,0
-Features with direction consistency >= 0.85,0

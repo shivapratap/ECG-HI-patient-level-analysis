@@ -1,0 +1,57 @@
+feature,feature_family,missing_count,missing_percent,non_missing_count,unique_non_missing_values,paired_patient_count,missingness_flag
+QRS_mean,ECG morphology and signal energy,5,0.003968253968253968,1255,1232,20,low_or_no_missingness
+QRS_std,ECG morphology and signal energy,5,0.003968253968253968,1255,1250,20,low_or_no_missingness
+HRV_MeanNN,HRV,1,0.0007936507936507937,1259,1202,20,low_or_no_missingness
+HRV_RMSSD,HRV,1,0.0007936507936507937,1259,1258,20,low_or_no_missingness
+HRV_pNN50,HRV,1,0.0007936507936507937,1259,1118,20,low_or_no_missingness
+R_amp_mean,ECG morphology and signal energy,1,0.0007936507936507937,1259,1259,20,low_or_no_missingness
+R_amp_std,ECG morphology and signal energy,1,0.0007936507936507937,1259,1259,20,low_or_no_missingness
+signal_energy,ECG morphology and signal energy,1,0.0007936507936507937,1259,1259,20,low_or_no_missingness
+HRV_SDNN,HRV,1,0.0007936507936507937,1259,1259,20,low_or_no_missingness
+entropyProfiled_average_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,13,20,low_or_no_missingness
+entropyProfiled_median_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,5,20,low_or_no_missingness
+entropyProfiled_minimum_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,1,20,low_or_no_missingness
+entropyProfiled_maximum_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,392,20,low_or_no_missingness
+katzFd,fractal and nonlinear dynamics,0,0.0,1260,190,20,low_or_no_missingness
+entropyProfiled_total_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,1180,20,low_or_no_missingness
+detrendedFluctuation,fractal and nonlinear dynamics,0,0.0,1260,61,20,low_or_no_missingness
+higuchiFd,fractal and nonlinear dynamics,0,0.0,1260,63,20,low_or_no_missingness
+entropyProfiled_variance_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,16,20,low_or_no_missingness
+entropyProfiled_standardDeviation_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,37,20,low_or_no_missingness
+fd_minimum,fractal-dimension summary features,0,0.0,1260,14,20,low_or_no_missingness
+entropyProfiled_kurtosis_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,1222,20,low_or_no_missingness
+entropyProfiled_skewness_sampleEntropy,entropy-profile aggregate features,0,0.0,1260,720,20,low_or_no_missingness
+fd_maximum,fractal-dimension summary features,0,0.0,1260,1254,20,low_or_no_missingness
+fisherInfo,fractal and nonlinear dynamics,0,0.0,1260,37,20,low_or_no_missingness
+fd_mean,fractal-dimension summary features,0,0.0,1260,823,20,low_or_no_missingness
+fd_median,fractal-dimension summary features,0,0.0,1260,482,20,low_or_no_missingness
+fd_standardDeviation,fractal-dimension summary features,0,0.0,1260,1005,20,low_or_no_missingness
+fd_variance,fractal-dimension summary features,0,0.0,1260,1251,20,low_or_no_missingness
+fd_kurtosis,fractal-dimension summary features,0,0.0,1260,1232,20,low_or_no_missingness
+fd_skewness,fractal-dimension summary features,0,0.0,1260,922,20,low_or_no_missingness
+spectralEntropy,entropy and complexity,0,0.0,1260,258,20,low_or_no_missingness
+petrosianFd,fractal and nonlinear dynamics,0,0.0,1260,3,20,low_or_no_missingness
+renyiEntropy,entropy and complexity,0,0.0,1260,419,20,low_or_no_missingness
+hjorthComplexity,entropy and complexity,0,0.0,1260,258,20,low_or_no_missingness
+positiveToNegativeSampleRatio,time-domain statistics,0,0.0,1260,296,20,low_or_no_missingness
+maximum,time-domain statistics,0,0.0,1260,143,20,low_or_no_missingness
+minimum,time-domain statistics,0,0.0,1260,159,20,low_or_no_missingness
+mean,time-domain statistics,0,0.0,1260,1,20,low_or_no_missingness
+median,time-domain statistics,0,0.0,1260,16,20,low_or_no_missingness
+standardDeviation,time-domain statistics,0,0.0,1260,40,20,low_or_no_missingness
+variance,time-domain statistics,0,0.0,1260,20,20,low_or_no_missingness
+kurtosis,time-domain statistics,0,0.0,1260,843,20,low_or_no_missingness
+skewness,time-domain statistics,0,0.0,1260,536,20,low_or_no_missingness
+numberOfZeroCrossing,time-domain statistics,0,0.0,1260,865,20,low_or_no_missingness
+positiveToNegativePeakRatio,time-domain statistics,0,0.0,1260,1,20,low_or_no_missingness
+hjorthMobility,fractal and nonlinear dynamics,0,0.0,1260,67,20,low_or_no_missingness
+meanAbsoluteValue,time-domain statistics,0,0.0,1260,29,20,low_or_no_missingness
+approximateEntropy,entropy and complexity,0,0.0,1260,106,20,low_or_no_missingness
+sampleEntropy,entropy and complexity,0,0.0,1260,96,20,low_or_no_missingness
+permutationEntropy,entropy and complexity,0,0.0,1260,83,20,low_or_no_missingness
+singularValueDecompositionEntropy,entropy and complexity,0,0.0,1260,77,20,low_or_no_missingness
+fuzzyEntropy,entropy and complexity,0,0.0,1260,76,20,low_or_no_missingness
+distributionEntropy,entropy and complexity,0,0.0,1260,39,20,low_or_no_missingness
+shannonEntropy,entropy and complexity,0,0.0,1260,1,20,low_or_no_missingness
+lempelZivComplexity,entropy and complexity,0,0.0,1260,118,20,low_or_no_missingness
+fd_bandPower,fractal-dimension summary features,0,0.0,1260,9,20,low_or_no_missingness

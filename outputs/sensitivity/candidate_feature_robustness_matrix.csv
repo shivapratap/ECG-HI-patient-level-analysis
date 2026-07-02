@@ -1,0 +1,10 @@
+feature,feature_family,baseline_dominant_direction,baseline_median_delta_HI_minus_PreHI,baseline_wilcoxon_p,baseline_rank_biserial_effect_size,n_sensitivity_scenarios_non_baseline,n_scenarios_with_adequate_sample_size,n_direction_retained,prop_direction_retained,n_delta_sign_retained,prop_delta_sign_retained,median_direction_consistency_across_scenarios,n_scenarios_raw_p_less_0_05,n_scenarios_bootstrap_ci_excludes_zero,sensitivity_robustness_label
+HRV_pNN50,HRV,decrease,-11.345795360000002,0.026641845703125,-0.5619047619047619,7,7,7,1.0,7,1.0,0.6842105263157895,5,0,robust
+entropyProfiled_maximum_sampleEntropy,entropy-profile aggregate features,decrease,-0.25500000000000017,0.034669963150986444,-0.5672514619883041,7,7,7,1.0,7,1.0,0.6470588235294118,4,2,robust
+kurtosis,time-domain statistics,increase,0.9924999999999997,0.03623390197753906,0.5333333333333333,7,7,7,1.0,7,1.0,0.7368421052631579,2,5,robust
+fuzzyEntropy,entropy and complexity,decrease,-0.01999999999999999,0.06399596863607887,-0.49707602339181284,7,7,7,1.0,7,1.0,0.6470588235294118,2,0,robust
+HRV_MeanNN,HRV,increase,20.759493749999933,0.05316925048828125,0.49523809523809526,7,7,7,1.0,7,1.0,0.7647058823529411,1,6,robust
+QRS_mean,ECG morphology and signal energy,increase,0.01035768875000001,0.023950576782226562,0.5714285714285714,7,7,7,1.0,7,1.0,0.5882352941176471,6,1,moderate
+entropyProfiled_standardDeviation_sampleEntropy,entropy-profile aggregate features,decrease,-0.015,0.0957872702101189,-0.5047619047619047,7,7,7,1.0,7,1.0,0.5294117647058824,2,0,moderate
+fd_minimum,fractal-dimension summary features,no_change,0.0,0.06661636996862676,-0.6666666666666666,7,7,7,1.0,7,1.0,0.5294117647058824,1,0,moderate
+fd_median,fractal-dimension summary features,decrease,-0.16249999999999998,0.08969497680664062,-0.4380952380952381,7,7,7,1.0,7,1.0,0.6428571428571429,0,0,moderate

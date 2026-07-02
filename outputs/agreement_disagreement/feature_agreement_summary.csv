@@ -1,0 +1,10 @@
+feature,feature_family,cohort_dominant_direction,cohort_wilcoxon_p,cohort_direction_consistency,n_patient_pairs_available,n_agree,n_disagree,n_neutral_no_change,n_missing_pairs,prop_agree,prop_disagree,prop_neutral_no_change,disagreeing_patient_ids,neutral_no_change_patient_ids,sensitivity_robustness_label,loo_stability_label
+kurtosis,time-domain statistics,increase,0.036233901977539,0.75,20,15,5,0,0,0.75,0.25,0.0,27245; 491; 638; 88503; 96879,,robust,stable
+HRV_MeanNN,HRV,increase,0.0531692504882812,0.75,20,15,5,0,0,0.75,0.25,0.0,26398; 30071; 638; 80436; 96879,,robust,stable
+HRV_pNN50,HRV,decrease,0.026641845703125,0.65,20,13,7,0,0,0.65,0.35,0.0,26502; 30851; 59285; 638; 70447; 96305; 96879,,robust,stable
+entropyProfiled_maximum_sampleEntropy,entropy-profile aggregate features,decrease,0.0346699631509864,0.65,20,13,5,2,0,0.65,0.25,0.1,491; 80436; 88503; 96305; 96879,26502; 30851,robust,stable
+fuzzyEntropy,entropy and complexity,decrease,0.0639959686360788,0.65,20,13,5,2,0,0.65,0.25,0.1,638; 80436; 88503; 90396; 96879,26502; 59285,robust,stable
+fd_median,fractal-dimension summary features,decrease,0.0896949768066406,0.65,20,13,7,0,0,0.65,0.35,0.0,26502; 27245; 30851; 80436; 88503; 906; 96305,,moderate,stable
+QRS_mean,ECG morphology and signal energy,increase,0.0239505767822265,0.6,20,12,8,0,0,0.6,0.4,0.0,26502; 27245; 30851; 57091; 638; 8452; 96305; 96879,,moderate,stable
+fd_minimum,fractal-dimension summary features,no_change,0.0666163699686267,0.55,20,11,9,0,0,0.55,0.45,0.0,1049; 1855; 26502; 27245; 30071; 30851; 638; 90396; 96305,,moderate,stable
+entropyProfiled_standardDeviation_sampleEntropy,entropy-profile aggregate features,decrease,0.0958692326959082,0.55,20,11,3,6,0,0.55,0.15,0.3,80436; 88503; 96879,26502; 30851; 491; 59285; 638; 96305,moderate,stable

@@ -1,0 +1,5 @@
+metric,value
+n_full_ecg_features,56
+n_informative_features,52
+n_excluded_features,4
+min_paired_patients_required,10

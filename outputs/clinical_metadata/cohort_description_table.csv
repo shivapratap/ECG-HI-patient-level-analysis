@@ -1,0 +1,21 @@
+characteristic,value
+Total patients,20
+Total ECG segments,1260
+paced_or_icd,5/20 (25.0%)
+BBB,4/20 (20.0%)
+continuous_AF,3/20 (15.0%)
+intermittent_or_new_AF,3/20 (15.0%)
+any_af,6/20 (30.0%)
+paced_or_bbb,6/20 (30.0%)
+major_HRV_outlier,1/20 (5.0%)
+antiarrhythmic_exposure,5/20 (25.0%)
+mechanical_support,3/20 (15.0%)
+atypical_HI,3/20 (15.0%)
+clean_sinus_candidate,4/20 (20.0%)
+exclude_from_HRV_valid_subgroup,8/20 (40.0%)
+hrv_invalid_flag,8/20 (40.0%)
+signal_review_flag,1/20 (5.0%)
+known_artifact_patient_flag,5/20 (25.0%)
+high_confound,3/20 (15.0%)
+moderate_or_high_confound,6/20 (30.0%)
+confound_count_median_IQR,"1.0 [1.0, 2.0]"

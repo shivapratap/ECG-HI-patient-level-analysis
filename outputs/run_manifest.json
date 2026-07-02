@@ -1,0 +1,33 @@
+{
+    "timestamp": "2026-07-02T18:57:00",
+    "project_root": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI",
+    "data_file": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/data/processed/20PatientsFinalData.xlsx",
+    "clinical_flags_file": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/metadata/patient_clinical_flags.csv",
+    "clinical_summary_file": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/metadata/patient_clinical_summary.csv",
+    "data_dictionary_file": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/docs/data_dictionary/20PatientsFinalData_data_dictionary.csv",
+    "feature_documentation_file": "/Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/docs/feature_documentation/ecg_lead_ii_feature_list.md",
+    "random_seed": 20260702,
+    "min_paired_patients_per_feature": 10,
+    "moderate_missingness_threshold": 0.1,
+    "high_missingness_threshold": 0.3,
+    "pipeline_version": "v4_stages_01_to_10",
+    "stages_run": [
+        "stage01_data_audit",
+        "stage02_feature_definition",
+        "stage03_remove_noninformative_features",
+        "stage04_clinical_metadata_merge",
+        "stage05_segment_qc_flags",
+        "stage06_patient_condition_medians",
+        "stage07_primary_paired_statistics",
+        "stage08_fdr_correction",
+        "stage09_redundancy_filtering",
+        "stage10_preliminary_feature_prioritization",
+        "stage11_hrv_valid_subgroup_analysis",
+        "stage12_supportive_mixed_effects_modelling",
+        "stage13_sensitivity_analysis",
+        "stage14_leave_one_patient_out_analysis",
+        "stage15_patient_agreement_disagreement_analysis",
+        "stage16_final_candidate_scorecard",
+        "stage17_final_workbook_export"
+    ]
+}

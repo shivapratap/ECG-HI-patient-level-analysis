@@ -1,0 +1,8 @@
+feature_family,n_features
+time-domain statistics,12
+entropy and complexity,11
+entropy-profile aggregate features,9
+fractal-dimension summary features,9
+fractal and nonlinear dynamics,6
+ECG morphology and signal energy,5
+HRV,4

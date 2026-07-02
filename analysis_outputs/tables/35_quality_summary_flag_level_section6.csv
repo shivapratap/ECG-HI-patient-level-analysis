@@ -1,8 +1,0 @@
-quality_flag,n_segments_flagged,percent_segments_flagged
-flag_HRV_MeanNN_high,33,2.62
-flag_HRV_RMSSD_high,23,1.83
-flag_HRV_SDNN_high,19,1.51
-flag_QRS_std_zero,5,0.4
-flag_missing_key_quality_feature,5,0.4
-flag_signal_energy_high,3,0.24
-flag_signal_energy_low,1,0.08

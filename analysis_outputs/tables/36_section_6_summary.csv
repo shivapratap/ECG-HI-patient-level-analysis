@@ -1,9 +1,0 @@
-item,value
-Number of patients,20
-Total ECG segments,1260
-PreHI segments,593
-During-HI segments,667
-Informative features,52
-Patients with both PreHI and HI,20
-Patients with at least one fixed quality-flagged segment,10
-Features with missing values,9

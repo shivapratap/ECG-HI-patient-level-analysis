@@ -1,0 +1,57 @@
+feature,is_numeric_or_convertible,dtype_original,feature_family,included_in_full_ecg_feature_set,reason
+HRV_MeanNN,True,float64,HRV,True,numeric ECG-derived feature
+HRV_SDNN,True,float64,HRV,True,numeric ECG-derived feature
+HRV_RMSSD,True,float64,HRV,True,numeric ECG-derived feature
+HRV_pNN50,True,float64,HRV,True,numeric ECG-derived feature
+R_amp_mean,True,float64,ECG morphology and signal energy,True,numeric ECG-derived feature
+R_amp_std,True,float64,ECG morphology and signal energy,True,numeric ECG-derived feature
+QRS_mean,True,float64,ECG morphology and signal energy,True,numeric ECG-derived feature
+QRS_std,True,float64,ECG morphology and signal energy,True,numeric ECG-derived feature
+signal_energy,True,float64,ECG morphology and signal energy,True,numeric ECG-derived feature
+maximum,True,float64,time-domain statistics,True,numeric ECG-derived feature
+minimum,True,float64,time-domain statistics,True,numeric ECG-derived feature
+mean,True,int64,time-domain statistics,True,numeric ECG-derived feature
+median,True,float64,time-domain statistics,True,numeric ECG-derived feature
+standardDeviation,True,float64,time-domain statistics,True,numeric ECG-derived feature
+variance,True,float64,time-domain statistics,True,numeric ECG-derived feature
+kurtosis,True,float64,time-domain statistics,True,numeric ECG-derived feature
+skewness,True,float64,time-domain statistics,True,numeric ECG-derived feature
+numberOfZeroCrossing,True,int64,time-domain statistics,True,numeric ECG-derived feature
+positiveToNegativeSampleRatio,True,float64,time-domain statistics,True,numeric ECG-derived feature
+positiveToNegativePeakRatio,True,int64,time-domain statistics,True,numeric ECG-derived feature
+meanAbsoluteValue,True,float64,time-domain statistics,True,numeric ECG-derived feature
+approximateEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+sampleEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+permutationEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+singularValueDecompositionEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+fuzzyEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+distributionEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+shannonEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+renyiEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+lempelZivComplexity,True,int64,entropy and complexity,True,numeric ECG-derived feature
+hjorthMobility,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+hjorthComplexity,True,float64,entropy and complexity,True,numeric ECG-derived feature
+fisherInfo,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+petrosianFd,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+katzFd,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+higuchiFd,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+detrendedFluctuation,True,float64,fractal and nonlinear dynamics,True,numeric ECG-derived feature
+entropyProfiled_total_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_average_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_maximum_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_minimum_sampleEntropy,True,int64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_median_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_standardDeviation_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_variance_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_kurtosis_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+entropyProfiled_skewness_sampleEntropy,True,float64,entropy-profile aggregate features,True,numeric ECG-derived feature
+fd_maximum,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_minimum,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_mean,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_median,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_standardDeviation,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_variance,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_kurtosis,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+fd_skewness,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature
+spectralEntropy,True,float64,entropy and complexity,True,numeric ECG-derived feature
+fd_bandPower,True,float64,fractal-dimension summary features,True,numeric ECG-derived feature

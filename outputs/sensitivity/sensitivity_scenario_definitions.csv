@@ -1,0 +1,9 @@
+scenario,segment_filter,patient_filter,purpose
+full_cohort_baseline,none,none,Reference analysis using all available non-missing feature values.
+qc_clean_segments,clear_segment_qc_exclusion_flag == 0,none,Tests whether findings survive removal of clear segment-level QC issues.
+exclude_high_confound,none,high_confound == 0,Tests whether findings are driven by heavily confounded patients.
+exclude_paced_or_bbb,none,paced_or_bbb == 0,"Tests sensitivity to pacing/BBB, especially morphology/QRS features."
+exclude_any_af,none,any_af == 0,Tests sensitivity to AF/rhythm irregularity.
+exclude_major_hrv_outlier,none,major_HRV_outlier == 0,Tests sensitivity to major HRV/R-peak outlier patients.
+exclude_mechanical_support,none,mechanical_support == 0,Tests sensitivity to mechanical support/device-related influence.
+exclude_atypical_hi,none,atypical_HI == 0,Tests sensitivity to atypical HI mechanisms.

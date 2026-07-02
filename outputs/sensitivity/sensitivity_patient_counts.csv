@@ -1,0 +1,9 @@
+scenario,n_segments,n_patients_total,n_patients_with_PreHI,n_patients_with_HI,n_patients_with_both_conditions
+full_cohort_baseline,1260,20,20,20,20
+qc_clean_segments,1153,20,19,20,19
+exclude_high_confound,1086,17,17,17,17
+exclude_paced_or_bbb,907,14,14,14,14
+exclude_any_af,874,14,14,14,14
+exclude_major_hrv_outlier,1202,19,19,19,19
+exclude_mechanical_support,1080,17,17,17,17
+exclude_atypical_hi,1081,17,17,17,17

@@ -1,0 +1,57 @@
+feature,feature_family
+HRV_MeanNN,HRV
+HRV_SDNN,HRV
+HRV_RMSSD,HRV
+HRV_pNN50,HRV
+R_amp_mean,ECG morphology and signal energy
+R_amp_std,ECG morphology and signal energy
+QRS_mean,ECG morphology and signal energy
+QRS_std,ECG morphology and signal energy
+signal_energy,ECG morphology and signal energy
+maximum,time-domain statistics
+minimum,time-domain statistics
+mean,time-domain statistics
+median,time-domain statistics
+standardDeviation,time-domain statistics
+variance,time-domain statistics
+kurtosis,time-domain statistics
+skewness,time-domain statistics
+numberOfZeroCrossing,time-domain statistics
+positiveToNegativeSampleRatio,time-domain statistics
+positiveToNegativePeakRatio,time-domain statistics
+meanAbsoluteValue,time-domain statistics
+approximateEntropy,entropy and complexity
+sampleEntropy,entropy and complexity
+permutationEntropy,entropy and complexity
+singularValueDecompositionEntropy,entropy and complexity
+fuzzyEntropy,entropy and complexity
+distributionEntropy,entropy and complexity
+shannonEntropy,entropy and complexity
+renyiEntropy,entropy and complexity
+lempelZivComplexity,entropy and complexity
+hjorthMobility,fractal and nonlinear dynamics
+hjorthComplexity,entropy and complexity
+fisherInfo,fractal and nonlinear dynamics
+petrosianFd,fractal and nonlinear dynamics
+katzFd,fractal and nonlinear dynamics
+higuchiFd,fractal and nonlinear dynamics
+detrendedFluctuation,fractal and nonlinear dynamics
+entropyProfiled_total_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_average_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_maximum_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_minimum_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_median_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_standardDeviation_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_variance_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_kurtosis_sampleEntropy,entropy-profile aggregate features
+entropyProfiled_skewness_sampleEntropy,entropy-profile aggregate features
+fd_maximum,fractal-dimension summary features
+fd_minimum,fractal-dimension summary features
+fd_mean,fractal-dimension summary features
+fd_median,fractal-dimension summary features
+fd_standardDeviation,fractal-dimension summary features
+fd_variance,fractal-dimension summary features
+fd_kurtosis,fractal-dimension summary features
+fd_skewness,fractal-dimension summary features
+spectralEntropy,entropy and complexity
+fd_bandPower,fractal-dimension summary features

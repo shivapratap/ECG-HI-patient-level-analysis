@@ -1,0 +1,5 @@
+final_candidate_category,n_features,features
+primary_exploratory_candidate,3,kurtosis; QRS_mean; entropyProfiled_maximum_sampleEntropy
+secondary_exploratory_candidate,3,fuzzyEntropy; fd_median; entropyProfiled_standardDeviation_sampleEntropy
+secondary_rhythm_sensitive_candidate,2,HRV_pNN50; HRV_MeanNN
+exploratory_or_downgraded,1,fd_minimum

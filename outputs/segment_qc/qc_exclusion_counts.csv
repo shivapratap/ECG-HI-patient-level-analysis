@@ -1,0 +1,12 @@
+qc_flag,n_segments_flagged,percent_segments_flagged
+qc_clear_segment_flag,1153,91.5079365079365
+known_patient_qc_caution_flag,302,23.96825396825397
+extreme_value_review_flag,270,21.428571428571427
+clear_segment_qc_exclusion_flag,107,8.492063492063492
+low_variability_signal_flag,101,8.015873015873016
+signal_review_flag,58,4.603174603174603
+extreme_kurtosis_review_flag,8,0.6349206349206349
+missing_any_informative_feature_flag,5,0.3968253968253968
+qrs_std_zero_flag,5,0.3968253968253968
+known_artifact_segment_flag,2,0.15873015873015872
+near_zero_signal_flag,1,0.07936507936507936

@@ -1,8 +1,0 @@
-figure,filename,description,path
-Figure 1,final_figure_1_workflow.png,Study workflow and analysis pipeline,analysis_outputs/figures/final_figure_1_workflow.png
-Figure 2,final_figure_2_patient_counts.png,Patient-wise Pre-HI and During-HI segment counts,analysis_outputs/figures/final_figure_2_patient_counts.png
-Figure 3,final_figure_3_top_feature_paired_plots.png,Patient-linked paired plots for final candidate features,analysis_outputs/figures/final_figure_3_top_feature_paired_plots.png
-Figure 4,final_figure_4_patient_feature_change_heatmap.png,Heatmap of patient-level feature changes,analysis_outputs/figures/final_figure_4_patient_feature_change_heatmap.png
-Figure 5,final_figure_5_correlation_heatmap.png,Within-subject centered Spearman correlation heatmap,analysis_outputs/figures/final_figure_5_correlation_heatmap.png
-Figure 6,final_figure_6_robustness_heatmap.png,Candidate feature robustness heatmap,analysis_outputs/figures/final_figure_6_robustness_heatmap.png
-Figure 7,final_figure_7_episode_descriptive_plot.png,Episode_Label descriptive plot for candidate features,analysis_outputs/figures/final_figure_7_episode_descriptive_plot.png

@@ -1,0 +1,12 @@
+metric,value
+n_rows,1260
+n_columns,63
+n_unique_patients,20
+metadata_columns_present,Sl_No; Segment_Number; Patient_id; Class; Condition; Episode_Label; Condition_std
+n_non_metadata_columns,56
+n_numeric_non_metadata_columns,56
+condition_std_values,HI; PreHI
+n_unmapped_condition_rows,0
+n_duplicate_rows,0
+n_patients_with_both_conditions,20
+class_condition_mismatch_count,0

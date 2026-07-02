@@ -1,0 +1,21 @@
+Patient_id,n_features_available,n_agree,n_disagree,n_neutral_no_change,prop_agree,prop_disagree,prop_neutral_no_change,disagreeing_features,neutral_no_change_features,clinical_flags_present
+96879,9,2,7,0,0.2222222222222222,0.7777777777777778,0.0,HRV_MeanNN; HRV_pNN50; QRS_mean; entropyProfiled_maximum_sampleEntropy; entropyProfiled_standardDeviation_sampleEntropy; fuzzyEntropy; kurtosis,,BBB; paced_or_bbb; mechanical_support; moderate_or_high_confound; known_patient_qc_caution_flag; known_artifact_patient_flag
+638,9,2,6,1,0.2222222222222222,0.6666666666666666,0.1111111111111111,HRV_MeanNN; HRV_pNN50; QRS_mean; fd_minimum; fuzzyEntropy; kurtosis,entropyProfiled_standardDeviation_sampleEntropy,paced_or_icd; BBB; paced_or_bbb; continuous_AF; any_af; antiarrhythmic_exposure; high_confound; moderate_or_high_confound; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+80436,9,4,5,0,0.4444444444444444,0.5555555555555556,0.0,HRV_MeanNN; entropyProfiled_maximum_sampleEntropy; entropyProfiled_standardDeviation_sampleEntropy; fd_median; fuzzyEntropy,,
+88503,9,4,5,0,0.4444444444444444,0.5555555555555556,0.0,entropyProfiled_maximum_sampleEntropy; entropyProfiled_standardDeviation_sampleEntropy; fd_median; fuzzyEntropy; kurtosis,,mechanical_support
+96305,9,3,5,1,0.3333333333333333,0.5555555555555556,0.1111111111111111,HRV_pNN50; QRS_mean; entropyProfiled_maximum_sampleEntropy; fd_median; fd_minimum,entropyProfiled_standardDeviation_sampleEntropy,antiarrhythmic_exposure
+26502,9,2,4,3,0.2222222222222222,0.4444444444444444,0.3333333333333333,HRV_pNN50; QRS_mean; fd_median; fd_minimum,entropyProfiled_maximum_sampleEntropy; entropyProfiled_standardDeviation_sampleEntropy; fuzzyEntropy,intermittent_or_new_AF; any_af
+27245,9,5,4,0,0.5555555555555556,0.4444444444444444,0.0,QRS_mean; fd_median; fd_minimum; kurtosis,,paced_or_icd; BBB; paced_or_bbb; moderate_or_high_confound; known_patient_qc_caution_flag; known_artifact_patient_flag; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+30851,9,3,4,2,0.3333333333333333,0.4444444444444444,0.2222222222222222,HRV_pNN50; QRS_mean; fd_median; fd_minimum,entropyProfiled_maximum_sampleEntropy; entropyProfiled_standardDeviation_sampleEntropy,paced_or_icd; BBB; paced_or_bbb; antiarrhythmic_exposure; high_confound; moderate_or_high_confound; known_patient_qc_caution_flag; known_artifact_patient_flag; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+30071,9,7,2,0,0.7777777777777778,0.2222222222222222,0.0,HRV_MeanNN; fd_minimum,,
+491,9,6,2,1,0.6666666666666666,0.2222222222222222,0.1111111111111111,entropyProfiled_maximum_sampleEntropy; kurtosis,entropyProfiled_standardDeviation_sampleEntropy,paced_or_icd; paced_or_bbb; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+90396,9,7,2,0,0.7777777777777778,0.2222222222222222,0.0,fd_minimum; fuzzyEntropy,,continuous_AF; any_af; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+1049,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,fd_minimum,,paced_or_icd; paced_or_bbb; intermittent_or_new_AF; any_af; antiarrhythmic_exposure; high_confound; moderate_or_high_confound; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+1855,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,fd_minimum,,mechanical_support
+26398,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,HRV_MeanNN,,continuous_AF; any_af; antiarrhythmic_exposure; moderate_or_high_confound; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+57091,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,QRS_mean,,atypical_HI
+59285,9,6,1,2,0.6666666666666666,0.1111111111111111,0.2222222222222222,HRV_pNN50,entropyProfiled_standardDeviation_sampleEntropy; fuzzyEntropy,atypical_HI
+70447,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,HRV_pNN50,,atypical_HI; known_patient_qc_caution_flag; known_artifact_patient_flag
+8452,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,QRS_mean,,
+906,9,8,1,0,0.8888888888888888,0.1111111111111111,0.0,fd_median,,major_HRV_outlier; known_patient_qc_caution_flag; known_artifact_patient_flag; hrv_invalid_flag; exclude_from_HRV_valid_subgroup
+10013,9,9,0,0,1.0,0.0,0.0,,,intermittent_or_new_AF; any_af

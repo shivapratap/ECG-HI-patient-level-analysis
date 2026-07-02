@@ -1,0 +1,14 @@
+column,present,dtype,non_missing_count
+Patient_ID,True,int64,20
+paced_or_icd,True,int64,20
+continuous_AF,True,int64,20
+intermittent_or_new_AF,True,int64,20
+any_AF,True,int64,20
+atypical_HI,True,int64,20
+major_HRV_outlier,True,int64,20
+BBB,True,int64,20
+antiarrhythmic_exposure,True,int64,20
+mechanical_support,True,int64,20
+clean_sinus_candidate,True,int64,20
+exclude_from_HRV_valid_subgroup,True,int64,20
+notes,True,object,20

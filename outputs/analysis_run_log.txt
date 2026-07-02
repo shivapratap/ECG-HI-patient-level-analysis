@@ -1,0 +1,96 @@
+2026-07-02 18:57:00,675 | INFO | Logging initialized.
+2026-07-02 18:57:00,676 | INFO | Project root: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI
+2026-07-02 18:57:00,695 | INFO | Input file validation completed.
+2026-07-02 18:57:00,696 | INFO | Run manifest written.
+2026-07-02 18:57:00,696 | INFO | Stage 1 started: Data loading and audit.
+2026-07-02 18:57:01,116 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/data_audit/class_condition_crosscheck.csv
+2026-07-02 18:57:01,122 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/data_audit/segment_counts_by_patient_condition.csv
+2026-07-02 18:57:01,125 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/data_audit/patient_condition_presence.csv
+2026-07-02 18:57:01,128 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/data_audit/missing_values_by_column.csv
+2026-07-02 18:57:01,129 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/data_audit/data_integrity_summary.csv
+2026-07-02 18:57:01,159 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/cleaned_data/cleaned_segment_feature_dataset.csv
+2026-07-02 18:57:01,160 | INFO | Stage 1 completed.
+2026-07-02 18:57:01,160 | INFO | Stage 2 started: Full ECG feature-set definition.
+2026-07-02 18:57:01,170 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/full_ecg_feature_list.csv
+2026-07-02 18:57:01,171 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/feature_family_map.csv
+2026-07-02 18:57:01,172 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/feature_family_summary.csv
+2026-07-02 18:57:01,173 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/feature_definition_audit.csv
+2026-07-02 18:57:01,173 | INFO | Stage 2 completed. Full ECG feature count: 56
+2026-07-02 18:57:01,173 | INFO | Stage 3 started: Remove non-informative features.
+2026-07-02 18:57:01,287 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/informative_feature_list.csv
+2026-07-02 18:57:01,289 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/excluded_noninformative_features.csv
+2026-07-02 18:57:01,290 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/feature_missingness_summary.csv
+2026-07-02 18:57:01,292 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/feature_definition/informative_feature_summary.csv
+2026-07-02 18:57:01,292 | INFO | Stage 3 completed. Informative features retained: 52
+2026-07-02 18:57:01,292 | INFO | Stage 4 started: Clinical metadata merge.
+2026-07-02 18:57:01,300 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/clinical_flags_column_audit.csv
+2026-07-02 18:57:01,306 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/clinical_flags_standardized.csv
+2026-07-02 18:57:01,312 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/clinical_merge_audit.csv
+2026-07-02 18:57:01,345 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/merged_segment_clinical_dataset.csv
+2026-07-02 18:57:01,347 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/patient_clinical_flag_summary.csv
+2026-07-02 18:57:01,350 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/cohort_description_table.csv
+2026-07-02 18:57:01,351 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/clinical_metadata/patient_clinical_summary_merged_reference.csv
+2026-07-02 18:57:01,351 | INFO | Stage 4 completed: Clinical metadata merge.
+2026-07-02 18:57:01,351 | INFO | Stage 5 started: Segment-level QC flags.
+2026-07-02 18:57:01,391 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/segment_qc/segment_qc_flags.csv
+2026-07-02 18:57:01,397 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/segment_qc/segment_qc_summary_by_patient_condition.csv
+2026-07-02 18:57:01,398 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/segment_qc/qc_exclusion_counts.csv
+2026-07-02 18:57:01,405 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/segment_qc/qc_flagged_segments_for_review.csv
+2026-07-02 18:57:01,405 | INFO | Stage 5 completed: Segment-level QC flags.
+2026-07-02 18:57:01,405 | INFO | Stage 6 started: Patient-condition medians and paired deltas.
+2026-07-02 18:57:01,418 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/patient_level/row_id_merge_audit.csv
+2026-07-02 18:57:01,430 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/patient_level/patient_condition_medians_all_features_full.csv
+2026-07-02 18:57:01,438 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/patient_level/patient_condition_medians_all_features_qc_clean.csv
+2026-07-02 18:57:01,547 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/patient_level/patient_feature_delta_table_all_features.csv
+2026-07-02 18:57:01,573 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/patient_level/patient_level_summary_all_features.csv
+2026-07-02 18:57:01,573 | INFO | Stage 6 completed: Patient-condition medians and paired deltas.
+2026-07-02 18:57:01,574 | INFO | Stage 7 started: Primary paired statistical analysis.
+2026-07-02 18:57:05,488 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/primary_statistics/primary_paired_feature_results_all_features.csv
+2026-07-02 18:57:05,488 | INFO | Stage 7 completed: Primary paired statistical analysis.
+2026-07-02 18:57:05,488 | INFO | Stage 8 started: FDR correction.
+2026-07-02 18:57:05,497 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/primary_statistics/primary_paired_feature_results_all_features_fdr.csv
+2026-07-02 18:57:05,500 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/primary_statistics/fdr_summary_by_family.csv
+2026-07-02 18:57:05,500 | INFO | Stage 8 completed: FDR correction.
+2026-07-02 18:57:05,500 | INFO | Stage 9 started: Redundancy filtering.
+2026-07-02 18:57:05,578 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/redundancy/within_subject_spearman_correlation_matrix.csv
+2026-07-02 18:57:05,585 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/redundancy/high_correlation_pairs.csv
+2026-07-02 18:57:05,586 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/redundancy/redundancy_clusters.csv
+2026-07-02 18:57:05,611 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/redundancy/cluster_representatives.csv
+2026-07-02 18:57:05,611 | INFO | Stage 9 completed: Redundancy filtering.
+2026-07-02 18:57:05,612 | INFO | Stage 10 started: Preliminary feature prioritization.
+2026-07-02 18:57:05,624 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/candidate_scorecard/preliminary_feature_priority_table.csv
+2026-07-02 18:57:05,625 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/candidate_scorecard/preliminary_candidate_shortlist.csv
+2026-07-02 18:57:05,625 | INFO | Stage 10 completed: Preliminary prioritization. Shortlist size = 9
+2026-07-02 18:57:05,626 | INFO | Stage 11 started: HRV-valid subgroup analysis.
+2026-07-02 18:57:05,634 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/hrv_subgroup/hrv_valid_patient_inclusion_table.csv
+2026-07-02 18:57:05,954 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/hrv_subgroup/hrv_valid_feature_results.csv
+2026-07-02 18:57:05,954 | INFO | Stage 11 completed: HRV-valid subgroup analysis. HRV-valid patients: 12/20.
+2026-07-02 18:57:05,955 | INFO | Stage 12 started: Supportive mixed-effects modelling.
+2026-07-02 18:57:06,873 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/mixed_effects/lmm_supportive_results_all_features.csv
+2026-07-02 18:57:06,873 | INFO | Stage 12 completed: Supportive mixed-effects modelling.
+2026-07-02 18:57:06,874 | INFO | Stage 13 started: Sensitivity analysis.
+2026-07-02 18:57:06,889 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/sensitivity/sensitivity_scenario_definitions.csv
+2026-07-02 18:57:12,434 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/sensitivity/sensitivity_analysis_by_scenario_recomputed.csv
+2026-07-02 18:57:12,447 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/sensitivity/sensitivity_patient_counts.csv
+2026-07-02 18:57:12,451 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/sensitivity/sensitivity_vs_full_cohort_summary.csv
+2026-07-02 18:57:12,461 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/sensitivity/candidate_feature_robustness_matrix.csv
+2026-07-02 18:57:12,461 | INFO | Stage 13 completed: Sensitivity analysis.
+2026-07-02 18:57:12,462 | INFO | Stage 14 started: Leave-one-patient-out influence analysis.
+2026-07-02 18:57:26,705 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/leave_one_patient_out/leave_one_patient_out_results.csv
+2026-07-02 18:57:26,717 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/leave_one_patient_out/leave_one_patient_out_summary.csv
+2026-07-02 18:57:26,718 | INFO | Stage 14 completed: Leave-one-patient-out influence analysis.
+2026-07-02 18:57:26,718 | INFO | Stage 15 started: Patient-level agreement/disagreement analysis.
+2026-07-02 18:57:26,738 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/agreement_disagreement/patient_feature_agreement_table.csv
+2026-07-02 18:57:26,746 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/agreement_disagreement/feature_agreement_summary.csv
+2026-07-02 18:57:26,759 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/agreement_disagreement/patient_disagreement_summary.csv
+2026-07-02 18:57:26,800 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/agreement_disagreement/clinical_flag_disagreement_summary.csv
+2026-07-02 18:57:26,803 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/agreement_disagreement/feature_patient_disagreement_matrix.csv
+2026-07-02 18:57:26,803 | INFO | Stage 15 completed: Patient-level agreement/disagreement analysis.
+2026-07-02 18:57:26,803 | INFO | Stage 16 started: Final candidate scorecard.
+2026-07-02 18:57:26,832 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/candidate_scorecard/final_candidate_scorecard.csv
+2026-07-02 18:57:26,835 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/candidate_scorecard/final_candidate_feature_categories.csv
+2026-07-02 18:57:26,837 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/candidate_scorecard/final_candidate_feature_summary_for_manuscript.csv
+2026-07-02 18:57:26,837 | INFO | Stage 16 completed: Final candidate scorecard.
+2026-07-02 18:57:26,837 | INFO | Stage 17 started: Final workbook export.
+2026-07-02 18:57:26,951 | INFO | Saved: /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/final_workbook/final_workbook_export_manifest.csv
+2026-07-02 18:57:26,952 | INFO | Stage 17 completed: Workbook exported to /Users/shivangayathri/Library/CloudStorage/OneDrive-Amritauniversity/MyStudents/Asha/Feature Detection for HI/outputs/final_workbook/HI_ECG_candidate_feature_analysis_workbook.xlsx
