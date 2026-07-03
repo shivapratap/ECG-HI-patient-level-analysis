@@ -1,0 +1,32 @@
+source_sheet,characteristic,value,qc_flag,n_segments_flagged,percent_segments_flagged,manuscript_note
+Cohort_Description,Total patients,20,,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,Total ECG segments,1260,,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,paced_or_icd,5/20 (25.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,BBB,4/20 (20.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,continuous_AF,3/20 (15.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,intermittent_or_new_AF,3/20 (15.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,any_af,6/20 (30.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,paced_or_bbb,6/20 (30.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,major_HRV_outlier,1/20 (5.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,antiarrhythmic_exposure,5/20 (25.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,mechanical_support,3/20 (15.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,atypical_HI,3/20 (15.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,clean_sinus_candidate,4/20 (20.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,exclude_from_HRV_valid_subgroup,8/20 (40.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,hrv_invalid_flag,8/20 (40.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,signal_review_flag,1/20 (5.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,known_artifact_patient_flag,5/20 (25.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,high_confound,3/20 (15.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,moderate_or_high_confound,6/20 (30.0%),,,,Cohort and QC information are summarized from the validated final workbook.
+Cohort_Description,confound_count_median_IQR,"1.0 [1.0, 2.0]",,,,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,qc_clear_segment_flag,1153.0,91.5079365079365,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,known_patient_qc_caution_flag,302.0,23.96825396825397,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,extreme_value_review_flag,270.0,21.42857142857143,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,clear_segment_qc_exclusion_flag,107.0,8.492063492063492,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,low_variability_signal_flag,101.0,8.015873015873016,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,signal_review_flag,58.0,4.603174603174603,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,extreme_kurtosis_review_flag,8.0,0.6349206349206349,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,missing_any_informative_feature_flag,5.0,0.3968253968253968,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,qrs_std_zero_flag,5.0,0.3968253968253968,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,known_artifact_segment_flag,2.0,0.1587301587301587,Cohort and QC information are summarized from the validated final workbook.
+QC_Counts,,,near_zero_signal_flag,1.0,0.0793650793650793,Cohort and QC information are summarized from the validated final workbook.
