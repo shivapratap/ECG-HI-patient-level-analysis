@@ -1,369 +1,284 @@
-# ECG-Derived Candidate Features Associated With Hemodynamic Instability in ICU Patients
-
-This repository contains the analysis notebook, processed ECG feature dataset, curated clinical metadata, data dictionaries, intermediate analysis outputs, and figures supporting the manuscript:
+# ECG-HI Patient-Level Analysis
 
 **ECG-Derived Candidate Features Associated With Hemodynamic Instability in ICU Patients: A Patient-Level Exploratory Analysis of Ultra-Short Segments**
 
-## Overview
+This repository contains the analysis pipeline, processed ECG feature tables, clinical-context annotations, signal-quality flags, and documentation for an exploratory study of ECG-derived candidate features associated with hemodynamic instability (HI) in ICU patients.
 
-This project investigates ECG-derived candidate features associated with hemodynamic instability (HI) in critically ill ICU patients.
+The analysis uses a clinically curated, cardiogenic-shock–enriched MIMIC-III cohort of 20 ICU patients. The central question is whether continuously available **Lead-II ECG** contains morphology, rhythm, distributional, entropy, or nonlinear-complexity features that change within patients between **Pre-HI** and **During-HI** conditions.
 
-The analysis uses ultra-short 2-minute Lead II ECG segments from a curated 20-patient ICU cohort. Each ECG segment is labelled as either:
+This repository is intended for reproducible research and transparent review of the feature-discovery workflow. It is **not** a clinical prediction model, a real-time HI detector, or a validated ECG biomarker package.
 
-- **Pre-HI**: segment preceding hemodynamic instability
-- **During-HI**: segment recorded during hemodynamic instability
+---
 
-The primary goal is **exploratory candidate feature discovery**, not prospective prediction or clinical validation.
+## Study overview
 
-The patient, rather than the individual ECG segment, is treated as the primary statistical unit. For each ECG-derived feature, patient-level median values are computed separately for Pre-HI and During-HI segments, and paired patient-level differences are analysed.
+Hemodynamic instability can be difficult to recognize early in ICU practice because clinically meaningful deterioration may occur between intermittent blood pressure measurements and may be partly masked by compensatory mechanisms. ECG is continuously monitored in many ICU patients and is therefore attractive for studying rapid physiological change. However, ECG does **not** directly measure blood pressure, cardiac output, vascular tone, or tissue perfusion.
 
-## Repository structure
+For this reason, this project uses a cautious patient-level feature-discovery design. Segment-level ECG features are first summarized into paired patient-level medians, and statistical inference is performed at the **patient level**, not the segment level.
 
-```text
-.
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── ecg_hi_patient_level_exploratory_analysis.ipynb
-│
-├── data/
-│   └── processed/
-│       └── 20PatientsFinalData.xlsx
-│
-├── metadata/
-│   ├── README.md
-│   ├── ECG_Clinical_Summary_Report.docx
-│   ├── patient_clinical_summary.csv
-│   └── patient_clinical_flags.csv
-│
-├── docs/
-│   ├── data_dictionary/
-│   │   ├── 20PatientsFinalData_data_dictionary.md
-│   │   └── 20PatientsFinalData_data_dictionary.csv
-│   │
-│   └── feature_documentation/
-│       └── ecg_lead_ii_feature_list.md
-│
-└── analysis_outputs/
-    ├── tables/
-    └── figures/
-```
-
-## Main notebook
-
-The complete analysis is provided in:
-
-```text
-ecg_hi_patient_level_exploratory_analysis.ipynb
-```
-
-The notebook performs the full analysis workflow, including:
-
-1. data loading and integrity checks,
-2. feature-family mapping,
-3. clinical and signal-quality flagging,
-4. cohort description,
-5. primary patient-level paired analysis,
-6. HRV-valid subgroup analysis,
-7. supportive mixed-effects modelling,
-8. redundancy analysis,
-9. sensitivity analyses,
-10. descriptive Episode_Label analysis,
-11. candidate feature scoring and ranking,
-12. generation of manuscript-facing tables and figures.
-
-## Data
-
-The main processed input dataset is stored in:
-
-```text
-data/processed/20PatientsFinalData.xlsx
-```
-
-This file contains the ECG-derived feature dataset used by the notebook.
-
-Dataset summary:
+### Cohort and analysis summary
 
 | Item | Value |
 |---|---:|
+| Data source | MIMIC-III Clinical Database and matched Waveform Database |
+| Cohort | Clinically curated cardiogenic-shock–enriched ICU cohort |
 | Patients | 20 |
-| ECG segment length | 2 minutes |
 | ECG lead | Lead II |
-| Rows | 1,260 |
-| Columns | 62 |
-| Metadata columns | 6 |
-| ECG-derived feature columns | 56 |
+| ECG sampling rate | 125 Hz |
+| Segment length | 2 minutes |
+| Total ECG segments | 1,260 |
+| Pre-HI segments | 593 |
+| During-HI segments | 667 |
+| Initial ECG-derived features | 56 |
+| Informative ECG-derived features analyzed | 52 |
+| Primary statistical unit | Patient |
 
-Each row corresponds to one 2-minute ECG segment from one patient.
+---
 
-The six metadata columns are:
+## What is included in this repository
 
-```text
-Sl_No
-Segment_Number
-Patient_id
-Class
-Condition
-Episode_Label
-```
+This repository supports the patient-level exploratory analysis reported in the associated manuscript. It includes:
 
-The remaining 56 columns are ECG-derived features.
+- processed ECG-derived feature data for the curated 20-patient cohort;
+- patient-level clinical-context and rhythm flags;
+- signal-quality and artifact-review flags;
+- the full 17-stage patient-level analysis pipeline;
+- intermediate and final analysis outputs;
+- documentation for understanding and rerunning the workflow.
 
-A full data dictionary is provided in:
+The pipeline starts from a processed segment-level ECG feature workbook. It does not download MIMIC-III, extract raw waveforms, or regenerate ECG features from raw waveform files.
 
-```text
-docs/data_dictionary/20PatientsFinalData_data_dictionary.md
-docs/data_dictionary/20PatientsFinalData_data_dictionary.csv
-```
+---
 
-## ECG feature documentation
+## Repository structure
 
-The ECG feature list is documented in:
-
-```text
-docs/feature_documentation/ecg_lead_ii_feature_list.md
-```
-
-The 56 ECG-derived features include feature families such as:
-
-- time-domain statistical features,
-- entropy and complexity features,
-- fractal and nonlinear dynamic features,
-- entropy-profile aggregate features,
-- fractal-dimension summary features,
-- spectral features,
-- HRV features,
-- ECG morphology and signal-energy features.
-
-## Clinical metadata
-
-Curated patient-level clinical metadata are stored in:
+The expected project layout is:
 
 ```text
-metadata/
+ECG-HI-patient-level-analysis/
+├── data/
+│   └── processed/
+│       └── 20PatientsFinalData.xlsx
+├── metadata/
+│   ├── patient_clinical_flags.csv
+│   ├── patient_clinical_summary.csv
+│   └── ECG_Clinical_Summary_Report.docx
+├── docs/
+│   ├── data_dictionary/
+│   │   ├── 20PatientsFinalData_data_dictionary.csv
+│   │   └── 20PatientsFinalData_data_dictionary.md
+│   ├── feature_documentation/
+│   │   └── ecg_lead_ii_feature_list.md
+│   └── Pipeline_Readme.md
+├── pipeline/
+│   ├── config.py
+│   ├── utils.py
+│   ├── stages.py
+│   └── run_pipeline.py
+├── outputs/
+├── requirements.txt
+├── LICENSE
+└── README.md
 ```
 
-This folder contains:
+The `outputs/` directory is created automatically when the pipeline is run.
 
-| File | Description |
+---
+
+## Required input files
+
+The pipeline expects the following required files:
+
+| File | Purpose |
 |---|---|
-| `patient_clinical_summary.csv` | Curated patient-level clinical summary table |
-| `patient_clinical_flags.csv` | Machine-readable patient-level binary clinical flags |
-| `ECG_Clinical_Summary_Report.docx` | Human-readable clinical reference report |
-| `README.md` | Description of the clinical metadata files |
+| `data/processed/20PatientsFinalData.xlsx` | Main segment-level ECG feature dataset |
+| `metadata/patient_clinical_flags.csv` | Patient-level rhythm, clinical-context, and confound flags |
+| `metadata/patient_clinical_summary.csv` | Patient-level clinical summary reference |
+| `docs/data_dictionary/20PatientsFinalData_data_dictionary.csv` | Data dictionary for the processed feature dataset |
+| `docs/feature_documentation/ecg_lead_ii_feature_list.md` | ECG feature documentation |
 
-The file `patient_clinical_flags.csv` contains patient-level flags used for interpretation and sensitivity analyses, including:
+Optional/reference files:
 
-```text
-paced_or_icd
-continuous_AF
-intermittent_or_new_AF
-any_AF
-atypical_HI
-major_HRV_outlier
-BBB
-antiarrhythmic_exposure
-mechanical_support
-clean_sinus_candidate
-exclude_from_HRV_valid_subgroup
-```
+| File | Purpose |
+|---|---|
+| `metadata/ECG_Clinical_Summary_Report.docx` | Human-readable clinical summary report |
+| `docs/data_dictionary/20PatientsFinalData_data_dictionary.md` | Markdown version of the data dictionary |
 
-These annotations support analyses such as:
+---
 
-- HRV-valid subgroup analysis,
-- clean sinus subgroup analysis,
-- exclusion of atypical HI patients,
-- exclusion of major HRV outlier patient,
-- BBB-specific interpretation of QRS morphology,
-- mechanical-support sensitivity analysis,
-- antiarrhythmic exposure sensitivity analysis.
+## Installation
 
-### Note on clinical data
-
-Raw MIMIC-III discharge summaries and raw clinical notes are **not included** in this repository.
-
-Only curated, derived clinical metadata are provided to support transparency and reproducibility of the analysis. Users requiring access to the original MIMIC-III clinical records must obtain access through the official MIMIC data access process and comply with the relevant data-use agreement.
-
-## Analysis outputs
-
-Generated outputs are stored in:
-
-```text
-analysis_outputs/
-├── tables/
-└── figures/
-```
-
-The `tables/` folder contains intermediate and final CSV files generated during the analysis. These include patient-level summaries, primary paired results, HRV-valid subgroup results, mixed-effects model results, redundancy summaries, sensitivity analyses, candidate scorecards, and manuscript-facing interpretation tables.
-
-The `figures/` folder contains analysis and manuscript figures generated by the notebook.
-
-## Statistical analysis summary
-
-The primary analysis is a patient-level paired comparison.
-
-For each ECG-derived feature:
-
-1. the median value is computed for each patient during Pre-HI segments,
-2. the median value is computed for each patient during During-HI segments,
-3. the paired difference is computed as:
-
-```text
-During-HI median − Pre-HI median
-```
-
-The primary patient-level analysis includes:
-
-- Wilcoxon signed-rank test,
-- matched-pairs rank-biserial effect size,
-- bootstrap confidence intervals for the median paired difference,
-- direction consistency across patients,
-- global and feature-family-level false discovery rate correction.
-
-Supportive analyses include:
-
-- HRV-valid subgroup analysis,
-- segment-level linear mixed-effects models,
-- within-subject centered Spearman correlation analysis,
-- redundancy clustering,
-- leave-one-patient-out analysis,
-- signal-quality filtered analysis,
-- clinically motivated sensitivity analyses,
-- descriptive Episode_Label analysis.
-
-The mixed-effects model used as a supportive analysis is:
-
-```text
-feature_z ~ Class + (1 | Patient_id)
-```
-
-The mixed-effects analysis is supportive rather than primary because multiple ECG segments are available per patient, while the cohort contains 20 patients.
-
-## Final candidate features
-
-The final scorecard selected six ECG-derived candidate features.
-
-### Strict candidates
-
-| Feature | Direction during HI | Interpretation |
-|---|---|---|
-| `kurtosis` | Increased | Leading patient-level distributional candidate |
-| `QRS_mean` | Increased | Leading morphology/conduction candidate |
-
-### Secondary candidates
-
-| Feature | Direction during HI | Interpretation |
-|---|---|---|
-| `fuzzyEntropy` | Decreased | Representative entropy/complexity candidate |
-| `fd_mean` | Decreased | Fractal-dimension summary candidate |
-| `entropyProfiled_maximum_sampleEntropy` | Decreased | Derived entropy-profile candidate |
-| `fd_median` | Decreased | Secondary fractal-dimension summary candidate |
-
-These features should be interpreted as **exploratory candidate markers**, not validated biomarkers or clinical predictors.
-
-## Important interpretation cautions
-
-This repository supports an exploratory analysis. The results should not be interpreted as establishing:
-
-- clinical diagnostic validity,
-- prospective predictive performance,
-- causal physiological mechanisms,
-- deployment readiness,
-- generalizability beyond this cohort.
-
-Important limitations include:
-
-- small cohort size,
-- retrospective design,
-- clinical heterogeneity,
-- rhythm and pacing confounding,
-- antiarrhythmic medication effects,
-- possible signal-quality artefacts,
-- no external validation cohort,
-- no prospective prediction model.
-
-## Reproducing the analysis
-
-### 1. Clone the repository
+Clone the repository:
 
 ```bash
-git clone <repository-url>
-cd <repository-name>
+git clone https://github.com/shivapratap/ECG-HI-patient-level-analysis.git
+cd ECG-HI-patient-level-analysis
 ```
 
-### 2. Create a Python environment
-
-Using `venv`:
+Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-On Windows:
+On Windows, use:
 
 ```bash
-python -m venv .venv
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-The main dependencies are:
+Python 3.10 or later is recommended.
 
-```text
-numpy
-pandas
-scipy
-statsmodels
-scikit-learn
-matplotlib
-seaborn
-openpyxl
-jupyter
-ipykernel
-```
+---
 
-### 4. Run the notebook
+## How to run the analysis
+
+Run the full pipeline from the repository root:
 
 ```bash
-jupyter notebook ecg_hi_patient_level_exploratory_analysis.ipynb
+python pipeline/run_pipeline.py
 ```
 
-Run the notebook cells sequentially from top to bottom.
-
-The notebook expects the input dataset at:
+The runner executes all pipeline stages in order, from data audit through final workbook export. When the run completes successfully, outputs are written under:
 
 ```text
-data/processed/20PatientsFinalData.xlsx
+outputs/
 ```
 
-and writes generated outputs to:
+The final workbook is written to:
 
 ```text
-analysis_outputs/tables/
-analysis_outputs/figures/
+outputs/final_workbook/HI_ECG_candidate_feature_analysis_workbook.xlsx
 ```
+
+---
+
+## Pipeline overview
+
+The pipeline contains 17 stages:
+
+| Stage | Purpose |
+|---:|---|
+| 1 | Load and audit the ECG feature dataset |
+| 2 | Define the full ECG-derived feature set |
+| 3 | Remove non-informative features |
+| 4 | Merge clinical-context metadata |
+| 5 | Create segment-level signal-quality flags |
+| 6 | Aggregate segment-level features into patient-condition medians |
+| 7 | Run primary patient-level paired statistics |
+| 8 | Apply global and feature-family FDR correction |
+| 9 | Map redundancy using within-patient centered Spearman correlation |
+| 10 | Create a preliminary candidate-feature shortlist |
+| 11 | Run HRV-valid subgroup analysis |
+| 12 | Run supportive mixed-effects models |
+| 13 | Run sensitivity analyses |
+| 14 | Run leave-one-patient-out influence analysis |
+| 15 | Analyze patient-level agreement and disagreement |
+| 16 | Build the final exploratory candidate scorecard |
+| 17 | Export the final review workbook |
+
+For a more detailed explanation of each stage, see:
+
+```text
+docs/Pipeline_Readme.md
+```
+
+---
+
+## Main analysis outputs
+
+Important outputs include:
+
+| Output | Description |
+|---|---|
+| `outputs/data_audit/data_integrity_summary.csv` | Dataset structure and integrity summary |
+| `outputs/data_audit/segment_counts_by_patient_condition.csv` | Segment counts by patient and condition |
+| `outputs/feature_definition/informative_feature_list.csv` | Features retained for analysis |
+| `outputs/clinical_metadata/cohort_description_table.csv` | Clinical/rhythm-context cohort summary |
+| `outputs/patient_level/patient_feature_delta_table_all_features.csv` | Patient-level Pre-HI vs During-HI feature deltas |
+| `outputs/primary_statistics/primary_paired_feature_results_all_features_fdr.csv` | Primary paired statistics with FDR correction |
+| `outputs/hrv_subgroup/hrv_valid_feature_results.csv` | HRV-valid subgroup results |
+| `outputs/mixed_effects/lmm_supportive_results_all_features.csv` | Supportive mixed-effects model results |
+| `outputs/sensitivity/candidate_feature_robustness_matrix.csv` | Candidate robustness across sensitivity scenarios |
+| `outputs/agreement_disagreement/feature_agreement_summary.csv` | Feature-level agreement summary |
+| `outputs/agreement_disagreement/patient_disagreement_summary.csv` | Patient-level disagreement summary |
+| `outputs/candidate_scorecard/final_candidate_scorecard.csv` | Full candidate evidence scorecard |
+| `outputs/candidate_scorecard/final_candidate_feature_categories.csv` | Final candidate category summary |
+| `outputs/final_workbook/HI_ECG_candidate_feature_analysis_workbook.xlsx` | Consolidated workbook of key results |
+
+---
+
+## Main result summary
+
+The primary patient-level paired analysis did **not** identify any ECG-derived feature that survived global or feature-family false discovery rate correction. Therefore, all candidate features should be interpreted as exploratory and hypothesis-generating.
+
+Within this FDR-null constraint, the final scorecard prioritized a nine-feature exploratory structure:
+
+| Candidate tier | Features |
+|---|---|
+| Primary exploratory candidates | `kurtosis`, `QRS_mean`, `entropyProfiled_maximum_sampleEntropy` |
+| Secondary exploratory candidates | `fuzzyEntropy`, `fd_median`, `entropyProfiled_standardDeviation_sampleEntropy` |
+| Secondary rhythm-sensitive candidates | `HRV_pNN50`, `HRV_MeanNN` |
+| Exploratory/downgraded | `fd_minimum` |
+
+The HRV-derived features are treated separately because HRV interpretation depends on reliable beat-to-beat interval estimation and is sensitive to pacing, atrial fibrillation, R-peak detection errors, and rhythm irregularity.
+
+---
+
+## Interpretation cautions
+
+This project is an exploratory feature-discovery analysis. The results should be described as:
+
+> ECG-derived candidate features associated with Pre-HI to During-HI change in this small, clinically curated ICU cohort.
+
+They should **not** be described as:
+
+- validated biomarkers;
+- a deployable HI detector;
+- a blood-pressure estimation method;
+- a clinical decision-support tool;
+- externally validated predictive features.
+
+The final scorecard organizes exploratory evidence. It does not override the null FDR-corrected primary analysis.
+
+---
+
+## Data and licensing
+
+The processed feature files and analysis code in this repository are available under the MIT License.
+
+This project was derived from MIMIC-III clinical and waveform resources. Users who wish to access or reproduce the original raw clinical or waveform data must obtain access through the appropriate MIMIC/PhysioNet credentialing and data-use process. Raw MIMIC-III records are not redistributed here.
+
+Users are responsible for complying with all applicable data-use agreements and must not attempt to re-identify patients.
+
+---
 
 ## Citation
 
-If you use this repository, please cite the associated manuscript:
+A citation will be added here when available.
 
-```text
-ECG-Derived Candidate Features Associated With Hemodynamic Instability in ICU Patients:
-A Patient-Level Exploratory Analysis of Ultra-Short Segments
+```bibtex
+# Citation placeholder
 ```
 
-A complete citation will be added after publication.
-
-## License
-
-See the `LICENSE` file for reuse terms.
+---
 
 ## Contact
 
-For questions about the analysis or repository, please contact the corresponding author of the associated manuscript.
+Repository maintainer:
+
+- GitHub: [@shivapratap](https://github.com/shivapratap)
+- Email: shivapg@am.amrita.edu
+
+---
+
+## License
+
+This repository is released under the MIT License. See `LICENSE` for details.
