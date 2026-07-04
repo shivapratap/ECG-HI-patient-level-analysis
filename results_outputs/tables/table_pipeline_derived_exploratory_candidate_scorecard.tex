@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Pipeline-Derived Exploratory Candidate Scorecard. Candidate categories are descriptive and do not override the FDR-null primary paired analysis.}
+\label{tab:pipeline_candidate_scorecard}
+\begin{tabular}{p{0.28\textwidth}p{0.19\textwidth}p{0.13\textwidth}p{0.32\textwidth}}
+\toprule
+Feature & Candidate category & Direction during HI & Main interpretation \\
+\midrule
+\feat{kurtosis} & Primary exploratory & Increased & Distributional/time-domain ECG feature \\
+\feat{QRS_mean} & Primary exploratory & Increased & QRS morphology/signal-energy feature \\
+\feat{entropyProfiled_maximum_sampleEntropy} & Primary exploratory & Decreased & Derived entropy-profile feature \\
+\feat{fuzzyEntropy} & Secondary exploratory & Decreased & Complexity-related feature \\
+\feat{fd_median} & Secondary exploratory & Decreased & Fractal-dimension summary feature \\
+\feat{entropyProfiled_standardDeviation_sampleEntropy} & Secondary exploratory & Decreased & Derived entropy-profile feature \\
+\feat{HRV_pNN50} & Secondary rhythm-sensitive & Decreased & HRV feature; rhythm-valid interpretation required \\
+\feat{HRV_MeanNN} & Secondary rhythm-sensitive & Increased & HRV feature; rhythm-valid interpretation required \\
+\feat{fd_minimum} & exploratory or downgraded & No change & Fractal-dimension feature with weaker support \\
+\bottomrule
+\end{tabular}
+\end{table}
