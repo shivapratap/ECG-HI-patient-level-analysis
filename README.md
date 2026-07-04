@@ -1,4 +1,5 @@
 # ECG-HI Patient-Level Analysis
+[![DOI](https://zenodo.org/badge/1274230747.svg)](https://doi.org/10.5281/zenodo.21194666)
 
 **ECG-Derived Candidate Features Associated With Hemodynamic Instability in ICU Patients: A Patient-Level Exploratory Analysis of Ultra-Short Segments**
 
