@@ -1,28 +1,46 @@
-# ECG-HI Patient-Level Analysis
+# Patient-Level ECG Feature Discovery Framework for Small Curated ICU Cohorts
+
 [![DOI](https://zenodo.org/badge/1274230747.svg)](https://doi.org/10.5281/zenodo.21194666)
 
-**ECG-Derived Candidate Features Associated With Hemodynamic Instability in ICU Patients: A Patient-Level Exploratory Analysis of Ultra-Short Segments**
+**Associated manuscript:**  
+*A Patient-Level Framework for Calibrated ECG Biomarker Discovery in Small, Curated ICU Cohorts: Application to Hemodynamic Instability in Cardiogenic Shock*
 
-This repository contains the analysis pipeline, processed ECG feature tables, clinical-context annotations, signal-quality flags, and documentation for an exploratory study of ECG-derived candidate features associated with hemodynamic instability (HI) in ICU patients.
+This repository contains the reusable analysis pipeline, processed ECG feature tables, clinical-context annotations, signal-quality flags, and documentation for a patient-level, claim-calibrated ECG feature-discovery framework in small curated ICU waveform cohorts.
 
-The analysis uses a clinically curated, cardiogenic-shock–enriched MIMIC-III cohort of 20 ICU patients. The central question is whether continuously available **Lead-II ECG** contains morphology, rhythm, distributional, entropy, or nonlinear-complexity features that change within patients between **Pre-HI** and **During-HI** conditions.
+The repository also provides a worked demonstration of the framework using a clinically curated, cardiogenic-shock–enriched MIMIC-III cohort of 20 ICU patients with paired **Pre-HI** and **During-HI** Lead-II ECG segments.
 
-This repository is intended for reproducible research and transparent review of the feature-discovery workflow. It is **not** a clinical prediction model, a real-time HI detector, or a validated ECG biomarker package.
+The demonstration asks whether Lead-II ECG-derived features show paired within-patient changes between Pre-HI and During-HI conditions. The framework is designed to answer this question without treating repeated ECG segments from the same patient as independent evidence, and with explicit calibration of exploratory claims through FDR correction, robustness checks, and candidate prioritization.
+
+This repository is intended for reproducible research, transparent review, and reuse of the patient-level framework. It is **not** a clinical prediction model, a real-time HI detector, a blood-pressure estimation method, a clinical decision-support system, or a validated ECG biomarker package.
 
 ---
 
-## Study overview
+## Purpose of this repository
 
-Hemodynamic instability can be difficult to recognize early in ICU practice because clinically meaningful deterioration may occur between intermittent blood pressure measurements and may be partly masked by compensatory mechanisms. ECG is continuously monitored in many ICU patients and is therefore attractive for studying rapid physiological change. However, ECG does **not** directly measure blood pressure, cardiac output, vascular tone, or tissue perfusion.
+This repository supports three uses:
 
-For this reason, this project uses a cautious patient-level feature-discovery design. Segment-level ECG features are first summarized into paired patient-level medians, and statistical inference is performed at the **patient level**, not the segment level.
+1. Reproduce the worked cardiogenic-shock/hemodynamic-instability demonstration reported in the manuscript.
+2. Inspect the patient-level statistical workflow used to avoid segment-level pseudoreplication.
+3. Reuse or adapt the framework for other small, patient-clustered ICU waveform studies.
 
-### Cohort and analysis summary
+The repository should be cited primarily as a framework and reproducible workflow resource, not as a source of validated ECG biomarkers.
+
+---
+
+## Framework overview
+
+Small ICU waveform studies often contain many signal segments from a small number of patients. In such settings, treating ECG windows as independent observations can inflate statistical evidence. This framework therefore treats the **patient** as the primary unit of inference.
+
+For each ECG-derived feature, segment-level values are first summarized into patient-condition medians. Each patient contributes one paired Pre-HI and During-HI value per feature to the primary analysis. Multiplicity correction, HRV-valid subgroup review, mixed-effects direction checking, redundancy mapping, sensitivity analysis, leave-one-patient-out review, and candidate scorecarding are then used to calibrate exploratory claims.
+
+ECG is continuously monitored in many ICU patients and is therefore attractive for studying rapid physiological change. However, ECG does **not** directly measure blood pressure, cardiac output, vascular tone, or tissue perfusion. The framework is therefore designed for cautious feature evaluation and prioritization, not for direct hemodynamic measurement or clinical deployment.
+
+### Demonstration cohort and analysis summary
 
 | Item | Value |
 |---|---:|
 | Data source | MIMIC-III Clinical Database and matched Waveform Database |
-| Cohort | Clinically curated cardiogenic-shock–enriched ICU cohort |
+| Demonstration cohort | Clinically curated cardiogenic-shock–enriched ICU cohort |
 | Patients | 20 |
 | ECG lead | Lead II |
 | ECG sampling rate | 125 Hz |
@@ -38,12 +56,12 @@ For this reason, this project uses a cautious patient-level feature-discovery de
 
 ## What is included in this repository
 
-This repository supports the patient-level exploratory analysis reported in the associated manuscript. It includes:
+This repository supports both the reusable patient-level analytic framework and the worked cardiogenic-shock/HI demonstration reported in the associated manuscript. It includes:
 
 - processed ECG-derived feature data for the curated 20-patient cohort;
 - patient-level clinical-context and rhythm flags;
 - signal-quality and artifact-review flags;
-- the full 17-stage patient-level analysis pipeline;
+- the full 17-stage patient-level, claim-calibrated analysis framework;
 - intermediate and final analysis outputs;
 - documentation for understanding and rerunning the workflow.
 
@@ -176,14 +194,14 @@ The pipeline contains 17 stages:
 | 7 | Run primary patient-level paired statistics |
 | 8 | Apply global and feature-family FDR correction |
 | 9 | Map redundancy using within-patient centered Spearman correlation |
-| 10 | Create a preliminary candidate-feature shortlist |
+| 10 | Create a preliminary candidate-prioritization shortlist |
 | 11 | Run HRV-valid subgroup analysis |
 | 12 | Run supportive mixed-effects models |
 | 13 | Run sensitivity analyses |
 | 14 | Run leave-one-patient-out influence analysis |
 | 15 | Analyze patient-level agreement and disagreement |
-| 16 | Build the final exploratory candidate scorecard |
-| 17 | Export the final review workbook |
+| 16 | Build the final exploratory candidate-prioritization scorecard |
+| 17 | Export the final framework demonstration workbook |
 
 For a more detailed explanation of each stage, see:
 
@@ -216,11 +234,11 @@ Important outputs include:
 
 ---
 
-## Main result summary
+## Worked demonstration result
 
-The primary patient-level paired analysis did **not** identify any ECG-derived feature that survived global or feature-family false discovery rate correction. Therefore, all candidate features should be interpreted as exploratory and hypothesis-generating.
+When applied to the cardiogenic-shock–enriched HI cohort, the primary patient-level paired analysis did **not** identify any ECG-derived feature that survived global or feature-family false discovery rate correction. This defines the demonstration as exploratory rather than confirmatory.
 
-Within this FDR-null constraint, the final scorecard prioritized a nine-feature exploratory structure:
+Within this FDR-null constraint, the framework's candidate-prioritization stage organized the remaining evidence into a nine-feature, four-tier exploratory scorecard:
 
 | Candidate tier | Features |
 |---|---|
@@ -231,13 +249,25 @@ Within this FDR-null constraint, the final scorecard prioritized a nine-feature 
 
 The HRV-derived features are treated separately because HRV interpretation depends on reliable beat-to-beat interval estimation and is sensitive to pacing, atrial fibrillation, R-peak detection errors, and rhythm irregularity.
 
+This scorecard is an output of the framework's exploratory prioritization stage. It should not be interpreted as a validated biomarker set or as evidence of clinical deployability.
+
+---
+
+## Reuse of the framework
+
+The framework can be adapted to other small, patient-clustered ICU waveform studies where repeated signal windows are available from the same patients under paired or clinically defined conditions.
+
+Potential applications include other shock phenotypes, sepsis onset, arrhythmia recurrence, weaning from mechanical ventilation, or other ICU waveform questions. Reuse requires a cohort-specific event definition, clinical curation or adjudication strategy, feature set, and validity rules for any feature family affected by rhythm, noise, device support, or measurement assumptions.
+
+The framework has so far been demonstrated on one cardiogenic-shock–enriched HI cohort. Its broader generalizability should be tested through independent application to other cohorts and clinical questions.
+
 ---
 
 ## Interpretation cautions
 
-This project is an exploratory feature-discovery analysis. The results should be described as:
+This project is a framework demonstration with exploratory feature-prioritization outputs. The results should be described as:
 
-> ECG-derived candidate features associated with Pre-HI to During-HI change in this small, clinically curated ICU cohort.
+> ECG-derived candidate features showing exploratory Pre-HI to During-HI change in this small, clinically curated ICU cohort.
 
 They should **not** be described as:
 
