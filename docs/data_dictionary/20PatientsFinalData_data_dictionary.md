@@ -121,7 +121,7 @@ Each row corresponds to one ultra-short 2-minute ECG Lead II segment from one IC
 | entropyProfiled_kurtosis_sampleEntropy | Numeric | Kurtosis of sample entropy values across entropy-profile windows. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
 | entropyProfiled_skewness_sampleEntropy | Numeric | Skewness of sample entropy values across entropy-profile windows. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
 
-### Fractal-dimension summary features
+### Frequency Domain summary features
 
 | column_name | column_type | description | allowed_values_or_units | role_in_analysis | notes |
 | --- | --- | --- | --- | --- | --- |
