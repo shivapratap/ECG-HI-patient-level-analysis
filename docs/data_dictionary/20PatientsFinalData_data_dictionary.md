@@ -125,14 +125,14 @@ Each row corresponds to one ultra-short 2-minute ECG Lead II segment from one IC
 
 | column_name | column_type | description | allowed_values_or_units | role_in_analysis | notes |
 | --- | --- | --- | --- | --- | --- |
-| fd_maximum | Numeric | Maximum value of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
-| fd_minimum | Numeric | Minimum value of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
-| fd_mean | Numeric | Mean value of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | Candidate ECG feature | Final secondary candidate; fractal-dimension summary feature; decreased during HI. |
-| fd_median | Numeric | Median value of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | Candidate ECG feature | Final secondary candidate; fractal-dimension summary feature; decreased during HI; may be redundant with fd_mean. |
-| fd_standardDeviation | Numeric | Standard deviation of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
-| fd_variance | Numeric | Variance of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
-| fd_kurtosis | Numeric | Kurtosis of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
-| fd_skewness | Numeric | Skewness of the fractal-dimension profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_maximum | Numeric | Maximum value of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_minimum | Numeric | Minimum value of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_mean | Numeric | Mean value of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | Candidate ECG feature | Final secondary candidate; frequency domain summary feature; decreased during HI. |
+| fd_median | Numeric | Median value of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | Candidate ECG feature | Final secondary candidate; frequency domain summary feature; decreased during HI; may be redundant with fd_mean. |
+| fd_standardDeviation | Numeric | Standard deviation of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_variance | Numeric | Variance of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_kurtosis | Numeric | Kurtosis of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
+| fd_skewness | Numeric | Skewness of the frequency domain profile. | Numeric value; unitless or feature-specific processed-signal units | ECG-derived feature | Extracted from ultra-short 2-minute Lead II ECG segment. |
 
 ### Spectral features
 
@@ -160,7 +160,7 @@ Each row corresponds to one ultra-short 2-minute ECG Lead II segment from one IC
 | Secondary candidate | `fuzzyEntropy` | Decreased | Representative entropy/complexity candidate |
 | Secondary candidate | `fd_mean` | Decreased | Fractal-dimension summary candidate |
 | Secondary candidate | `entropyProfiled_maximum_sampleEntropy` | Decreased | Derived entropy-profile candidate |
-| Secondary candidate | `fd_median` | Decreased | Secondary fractal-dimension summary candidate |
+| Secondary candidate | `fd_median` | Decreased | Secondary frequency domain summary candidate |
 
 ## Reproducibility
 
